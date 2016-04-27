@@ -9,14 +9,14 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;安裝 Pelican&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install pelican markdown
+&lt;div class="highlight"&gt;&lt;pre&gt;pip install pelican markdown
 git clone https://github.com/username/username.github.io-src ghpages
 &lt;span class="nb"&gt;cd&lt;/span&gt; ghpages
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h1&gt;使用 Pelican 設定 Blog&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git remote -v
+&lt;div class="highlight"&gt;&lt;pre&gt;git remote -v
 git submodule add https://github.com/username/username.github.io output
 pelican-quickstart
 &lt;/pre&gt;&lt;/div&gt;
@@ -39,13 +39,13 @@ pelican-quickstart
 &lt;p&gt;Open the publishconf.py file and set the DELETE_OUTPUT_DIRECTORY variable to False.&lt;/p&gt;
 &lt;p&gt;Error: [Errno 17] File exists: '/Users/hung/Github/ghpages/output' (這個錯誤不用理）&lt;/p&gt;
 &lt;h1&gt;Init, update submodule (非必要)&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git submodule init
+&lt;div class="highlight"&gt;&lt;pre&gt;git submodule init
 git submodule update
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h1&gt;Build, commit, push, 完成!&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;make html &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; make serve
+&lt;div class="highlight"&gt;&lt;pre&gt;make html &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; make serve
 make publish
 
 &lt;span class="nb"&gt;cd&lt;/span&gt; output
