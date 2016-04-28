@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Blog</title>
+        <meta charset="utf-8" />
+        <link href="http://chihhunglin.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Blog Full Atom Feed" />
+        <link href="http://chihhunglin.github.io/feeds/github.atom.xml" type="application/atom+xml" rel="alternate" title="Blog Categories Atom Feed" />
+
+
+
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://chihhunglin.github.io/">Blog <strong></strong></a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+        </ul></nav><!-- /#menu -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="http://chihhunglin.github.io/ru-he-yong-you-zi-ji-de-github-wang-zhan.html" rel="bookmark"
+         title="Permalink to 如何擁有自己的 GitHub 網站">如何擁有自己的 GitHub 網站</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <abbr class="published" title="2014-12-09T10:21:00+08:00">
+      二 09 12月 2014
+    </abbr>
+    <address class="vcard author">
+      By           <a class="url fn" href="http://chihhunglin.github.io/author/peter-lin.html">Peter Lin</a>
+    </address>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <h1>步驟</h1>
+<ol>
+<li>建立容器 <ul>
+<li>取得<strong>GitHub</strong>帳號</li>
+<li>建立<strong>repository</strong>，命名規則 username.github.io</li>
+</ul>
+</li>
+<li>複製容器</li>
+</ol>
+<div class="highlight"><pre><span></span>git clone https://github.com/username/username.github.io
+</pre></div>
+
+
+<ol>
+<li>世界您好</li>
+</ol>
+<div class="highlight"><pre><span></span><span class="nb">cd</span> username.github.io
+<span class="nb">echo</span> <span class="s2">&quot;Hello World&quot;</span> &gt; index.html
+</pre></div>
+
+
+<ol>
+<li>上傳</li>
+</ol>
+<div class="highlight"><pre><span></span>git add --all
+git commit -m <span class="s2">&quot;Initial commit&quot;</span>
+git push
+</pre></div>
+
+
+<p><strong>記得輸入帳號密碼</strong></p>
+<h1>參考</h1>
+<ul>
+<li><a href="https://pages.github.com/">GiHub Pages</a></li>
+</ul>
+  </div><!-- /.entry-content -->
+</section>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

@@ -9,14 +9,14 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1&gt;安裝 Pelican&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;pip install pelican markdown
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install pelican markdown
 git clone https://github.com/username/username.github.io-src ghpages
 &lt;span class="nb"&gt;cd&lt;/span&gt; ghpages
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h1&gt;使用 Pelican 設定 Blog&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;git remote -v
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git remote -v
 git submodule add https://github.com/username/username.github.io output
 pelican-quickstart
 &lt;/pre&gt;&lt;/div&gt;
@@ -39,13 +39,13 @@ pelican-quickstart
 &lt;p&gt;Open the publishconf.py file and set the DELETE_OUTPUT_DIRECTORY variable to False.&lt;/p&gt;
 &lt;p&gt;Error: [Errno 17] File exists: '/Users/hung/Github/ghpages/output' (這個錯誤不用理）&lt;/p&gt;
 &lt;h1&gt;Init, update submodule (非必要)&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;git submodule init
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git submodule init
 git submodule update
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h1&gt;Build, commit, push, 完成!&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;make html &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; make serve
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;make html &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; make serve
 make publish
 
 &lt;span class="nb"&gt;cd&lt;/span&gt; output
@@ -64,4 +64,38 @@ git push -u origin master
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://pages.github.com/"&gt;GiHub Pages&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://fedoramagazine.org/make-github-pages-blog-with-pelican/"&gt;Make a Github Pages blog with Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary></entry><entry><title>如何擁有自己的 GitHub 網站</title><link href="http://chihhunglin.github.io/ru-he-yong-you-zi-ji-de-github-wang-zhan.html" rel="alternate"></link><published>2014-12-09T10:21:00+08:00</published><author><name>Peter Lin</name></author><id>tag:chihhunglin.github.io,2014-12-09:ru-he-yong-you-zi-ji-de-github-wang-zhan.html</id><summary type="html">&lt;h1&gt;步驟&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;建立容器 &lt;ul&gt;
+&lt;li&gt;取得&lt;strong&gt;GitHub&lt;/strong&gt;帳號&lt;/li&gt;
+&lt;li&gt;建立&lt;strong&gt;repository&lt;/strong&gt;，命名規則 username.github.io&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;複製容器&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone https://github.com/username/username.github.io
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;世界您好&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; username.github.io
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Hello World&amp;quot;&lt;/span&gt; &amp;gt; index.html
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;上傳&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git add --all
+git commit -m &lt;span class="s2"&gt;&amp;quot;Initial commit&amp;quot;&lt;/span&gt;
+git push
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;記得輸入帳號密碼&lt;/strong&gt;&lt;/p&gt;
+&lt;h1&gt;參考&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://pages.github.com/"&gt;GiHub Pages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</summary></entry></feed>
