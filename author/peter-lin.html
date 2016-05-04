@@ -54,6 +54,9 @@ Blog            </a>
                         <li >
                             <a href="http://chihhunglin.github.io/category/github.html">Github</a>
                         </li>
+                        <li >
+                            <a href="http://chihhunglin.github.io/category/python.html">Python</a>
+                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="http://chihhunglin.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
@@ -67,6 +70,28 @@ Blog            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
+            <article>
+                <h2><a href="http://chihhunglin.github.io/cong-javascript-kan-python.html">從 javascript 看 python</a></h2>
+                <div class="summary"><p>學習 <a href="https://www.python.org/">Python</a> 筆記，紀錄與 javascript 語法特別的地方．(不完整版)</p>
+<h2>The range() Function</h2>
+<div class="highlight"><pre><span></span>&gt;&gt;&gt; <span class="nv">a</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;Mary&#39;</span>, <span class="s1">&#39;had&#39;</span>, <span class="s1">&#39;a&#39;</span>, <span class="s1">&#39;little&#39;</span>, <span class="s1">&#39;lamb&#39;</span><span class="o">]</span>
+&gt;&gt;&gt; <span class="k">for</span> i in range<span class="o">(</span>len<span class="o">(</span>a<span class="o">))</span>:
+...     print i, a<span class="o">[</span>i<span class="o">]</span>
+...
+<span class="m">0</span> Mary
+<span class="m">1</span> had
+<span class="m">2</span> a
+<span class="m">3</span> little
+<span class="m">4</span> lamb
+</pre></div>
+
+
+<h2>break and continue Statements, and else Clauses on Loops</h2>
+<div class="highlight"><pre><span></span>&gt;&gt;&gt; <span class="k">for</span> n in range<span class="o">(</span>2 ...</pre></div>
+                    <a class="btn btn-default btn-xs" href="http://chihhunglin.github.io/cong-javascript-kan-python.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
             <article>
                 <h2><a href="http://chihhunglin.github.io/shi-yong-pelican-chuang-zao-zi-ji-de-github-pages-blog.html">使用 Pelican 創造自己的 Github Pages blog</a></h2>
                 <div class="summary"><p><a href="http://docs.getpelican.com/en/3.6.3/">Pelican</a> 用 python 寫成的靜態網頁產生工具．</p>
@@ -89,6 +114,35 @@ git clone https://github.com/username/username.github.io-src ghpages
 <div class="highlight"><pre><span></span>git remote -v
 git submodule ...</pre></div>
                     <a class="btn btn-default btn-xs" href="http://chihhunglin.github.io/shi-yong-pelican-chuang-zao-zi-ji-de-github-pages-blog.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://chihhunglin.github.io/remote-debugging-python-with-eclipse-and-pydev.html">Remote Debugging Python with Eclipse and PyDev</a></h2>
+                <div class="summary"><p>原文請參閱<a href="http://brianfisher.name/content/remote-debugging-python-eclipse-and-pydev">Blog</a>，本文新增自己的實作過程。
+環境介紹</p>
+<blockquote>
+<p>Local : Win8 + eclipse + PyDev</p>
+<p>Remote : ubuntu + python2.7 in virtualbox</p>
+</blockquote>
+<ol>
+<li>
+<p>安裝<a href="https://eclipse.org/">eclipse</a>
+請先安裝<a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Java</a>，我安裝的是Java 8 跟 eclipse jee luna。</p>
+</li>
+<li>
+<p>安裝<a href="http://pydev.org/manual_101_install.html">PyDev</a></p>
+</li>
+<li>
+<p>建立PyDev專案，設定python interpreter(注意要跟遠端執行的同一個minor版本)</p>
+<ul>
+<li>安裝<a href="https://www.python.org/downloads/">python interpreter</a></li>
+<li>在Eclipse 設定 python interpreter，參考 <a href="http://kodi.wiki/view/HOW-TO:Debug_Python_Scripts_with_Eclipse">2.3.1 Add Python Interpreter Path </a></li>
+<li>
+<p>建立專案 </p>
+<blockquote>
+<p>File -&gt; New -&gt; PyDev Project ...</p></blockquote></li></ul></li></ol>
+                    <a class="btn btn-default btn-xs" href="http://chihhunglin.github.io/remote-debugging-python-with-eclipse-and-pydev.html">more ...</a>
                 </div>
             </article>
             <hr/>

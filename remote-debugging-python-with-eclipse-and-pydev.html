@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Blog</title>
+    <title>Remote Debugging Python with Eclipse and PyDev - Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,15 +10,19 @@
 
     <link href="http://chihhunglin.github.io/images/favicon.jpg" rel="icon">
 
-<link rel="canonical" href="http://chihhunglin.github.io">
-        <meta name="author" content="Peter Lin" />
+<link rel="canonical" href="http://chihhunglin.github.io/remote-debugging-python-with-eclipse-and-pydev.html">
 
-    <!-- Open Graph tags -->
+        <meta name="author" content="Peter Lin" />
+        <meta name="description" content="原文請參閱Blog，本文新增自己的實作過程。 環境介紹 Local : Win8 + eclipse + PyDev Remote : ubuntu + python2.7 in virtualbox 安裝eclipse 請先安裝Java，我安裝的是Java 8 跟 eclipse jee luna。 安裝PyDev 建立PyDev專案，設定python interpreter(注意要跟遠端執行的同一個minor版本) 安裝python interpreter 在Eclipse 設定 python interpreter，參考 2.3.1 Add Python Interpreter Path 建立專案 File -&gt; New -&gt; PyDev Project ..." />
+
         <meta property="og:site_name" content="Blog" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Blog"/>
-        <meta property="og:url" content="http://chihhunglin.github.io"/>
-        <meta property="og:description" content="Blog"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Remote Debugging Python with Eclipse and PyDev"/>
+        <meta property="og:url" content="http://chihhunglin.github.io/remote-debugging-python-with-eclipse-and-pydev.html"/>
+        <meta property="og:description" content="原文請參閱Blog，本文新增自己的實作過程。 環境介紹 Local : Win8 + eclipse + PyDev Remote : ubuntu + python2.7 in virtualbox 安裝eclipse 請先安裝Java，我安裝的是Java 8 跟 eclipse jee luna。 安裝PyDev 建立PyDev專案，設定python interpreter(注意要跟遠端執行的同一個minor版本) 安裝python interpreter 在Eclipse 設定 python interpreter，參考 2.3.1 Add Python Interpreter Path 建立專案 File -&gt; New -&gt; PyDev Project ..."/>
+        <meta property="article:published_time" content="2014-12-27" />
+            <meta property="article:section" content="Python" />
+            <meta property="article:author" content="Peter Lin" />
 
 
     <!-- Bootstrap -->
@@ -33,6 +37,8 @@
 
 
 
+        <link href="http://chihhunglin.github.io/feeds/python.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Blog Python ATOM Feed"/>
 
 </head>
 <body>
@@ -54,7 +60,7 @@ Blog            </a>
                         <li >
                             <a href="http://chihhunglin.github.io/category/github.html">Github</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="http://chihhunglin.github.io/category/python.html">Python</a>
                         </li>
             </ul>
@@ -66,72 +72,38 @@ Blog            </a>
     </div>
 </div> <!-- /.navbar -->
 <!-- Banner -->
-<style>
-	#banner{
-	    background-image:url("http://chihhunglin.github.io/images/paddy.jpg");
-	}
-</style>
-
-<div id="banner">
-	<div class="container">
-		<div class="copy">
-			<h1>Blog</h1>
-		</div>
-	</div>
-</div><!-- End Banner -->
+<!-- End Banner -->
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            <article>
-                <h2><a href="http://chihhunglin.github.io/cong-javascript-kan-python.html">從 javascript 看 python</a></h2>
-                <div class="summary"><p>學習 <a href="https://www.python.org/">Python</a> 筆記，紀錄與 javascript 語法特別的地方．(不完整版)</p>
-<h2>The range() Function</h2>
-<div class="highlight"><pre><span></span>&gt;&gt;&gt; <span class="nv">a</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;Mary&#39;</span>, <span class="s1">&#39;had&#39;</span>, <span class="s1">&#39;a&#39;</span>, <span class="s1">&#39;little&#39;</span>, <span class="s1">&#39;lamb&#39;</span><span class="o">]</span>
-&gt;&gt;&gt; <span class="k">for</span> i in range<span class="o">(</span>len<span class="o">(</span>a<span class="o">))</span>:
-...     print i, a<span class="o">[</span>i<span class="o">]</span>
-...
-<span class="m">0</span> Mary
-<span class="m">1</span> had
-<span class="m">2</span> a
-<span class="m">3</span> little
-<span class="m">4</span> lamb
-</pre></div>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://chihhunglin.github.io/remote-debugging-python-with-eclipse-and-pydev.html"
+                       rel="bookmark"
+                       title="Permalink to Remote Debugging Python with Eclipse and PyDev">
+                        Remote Debugging Python with Eclipse and PyDev
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-12-27T14:30:00+08:00"> 六 27 12月 2014</time>
+    </span>
 
 
-<h2>break and continue Statements, and else Clauses on Loops</h2>
-<div class="highlight"><pre><span></span>&gt;&gt;&gt; <span class="k">for</span> n in range<span class="o">(</span>2 ...</pre></div>
-                    <a class="btn btn-default btn-xs" href="http://chihhunglin.github.io/cong-javascript-kan-python.html">more ...</a>
+
+
+
+    
+</footer><!-- /.post-info -->                    </div>
                 </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://chihhunglin.github.io/shi-yong-pelican-chuang-zao-zi-ji-de-github-pages-blog.html">使用 Pelican 創造自己的 Github Pages blog</a></h2>
-                <div class="summary"><p><a href="http://docs.getpelican.com/en/3.6.3/">Pelican</a> 用 python 寫成的靜態網頁產生工具．</p>
-<h1>設定 github.io 網頁</h1>
-<ul>
-<li>建立兩個容器 <ul>
-<li>取得 <strong>GitHub</strong> 帳號</li>
-<li>建立 <strong>repository</strong> ，命名規則 username.github.io-src and username.github.io(初始化加入README)</li>
-</ul>
-</li>
-</ul>
-<h1>安裝 Pelican</h1>
-<div class="highlight"><pre><span></span>pip install pelican markdown
-git clone https://github.com/username/username.github.io-src ghpages
-<span class="nb">cd</span> ghpages
-</pre></div>
-
-
-<h1>使用 Pelican 設定 Blog</h1>
-<div class="highlight"><pre><span></span>git remote -v
-git submodule ...</pre></div>
-                    <a class="btn btn-default btn-xs" href="http://chihhunglin.github.io/shi-yong-pelican-chuang-zao-zi-ji-de-github-pages-blog.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://chihhunglin.github.io/remote-debugging-python-with-eclipse-and-pydev.html">Remote Debugging Python with Eclipse and PyDev</a></h2>
-                <div class="summary"><p>原文請參閱<a href="http://brianfisher.name/content/remote-debugging-python-eclipse-and-pydev">Blog</a>，本文新增自己的實作過程。
+                <p>原文請參閱<a href="http://brianfisher.name/content/remote-debugging-python-eclipse-and-pydev">Blog</a>，本文新增自己的實作過程。
 環境介紹</p>
 <blockquote>
 <p>Local : Win8 + eclipse + PyDev</p>
@@ -153,52 +125,83 @@ git submodule ...</pre></div>
 <li>
 <p>建立專案 </p>
 <blockquote>
-<p>File -&gt; New -&gt; PyDev Project ...</p></blockquote></li></ul></li></ol>
-                    <a class="btn btn-default btn-xs" href="http://chihhunglin.github.io/remote-debugging-python-with-eclipse-and-pydev.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://chihhunglin.github.io/ru-he-yong-you-zi-ji-de-github-wang-zhan.html">如何擁有自己的 GitHub 網站</a></h2>
-                <div class="summary"><h1>步驟</h1>
-<ol>
-<li>建立容器 <ul>
-<li>取得<strong>GitHub</strong>帳號</li>
-<li>建立<strong>repository</strong>，命名規則 username.github.io</li>
+<p>File -&gt; New -&gt; PyDev Project
+      &gt; [PyDev Project]dialog
+      &gt; Project name: 自己打一個
+      &gt; Project contents: 程式放置目錄
+      &gt; Interpreter: 選剛才設定Python27
+      &gt; Finish</p>
+</blockquote>
+</li>
 </ul>
 </li>
-<li>複製容器</li>
+<li>
+<p>複製pydev到遠端機器</p>
+</li>
 </ol>
-<div class="highlight"><pre><span></span>git clone https://github.com/username/username.github.io
+<div class="highlight"><pre><span></span>find /Applications/eclipse/plugins -name <span class="s1">&#39;org.python.pydev_*&#39;</span>
+</pre></div>
+
+
+<p>e.g. /Applications/eclipse/plugins/org.python.pydev_2.8.2.2013090511</p>
+<div class="highlight"><pre><span></span>    將檔案放置到正確路徑
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>python -c <span class="s2">&quot;import sys</span>
+<span class="s2">from pprint import pprint as pp</span>
+<span class="s2">pp(sys.path)&quot;</span>
+</pre></div>
+
+
+<p>e.g. /usr/local/lib/python2.7/dist-packages</p>
+<div class="highlight"><pre><span></span>ssh vagrant@example.dev mkdir pysrc
+scp -r /Applications/eclipse/plugins/org.python.pydev_2.8.2.2013090511/pysrc/* vagrant@example.dev:pysrc
+ssh vagrant@example.dev <span class="s1">&#39;sudo cp -R pysrc/* /usr/local/lib/python2.7/dist-packages/&#39;</span>
+ssh vagrant@example.dev rm -r pysrc
 </pre></div>
 
 
 <ol>
-<li>世界您好</li>
+<li>設定路徑對照
+在 ubuntu 編輯 /usr/local/lib/python2.7/dist-packages/pydevd_file_utils.py</li>
 </ol>
-<div class="highlight"><pre><span></span><span class="nb">cd</span> username.github.io
-<span class="nb">echo</span> <span class="s2">&quot;Hello World&quot;</span> &gt; index.html
+<div class="highlight"><pre><span></span><span class="nv">PATHS_FROM_ECLIPSE_TO_PYTHON</span> <span class="o">=</span> <span class="o">[</span>
+        <span class="o">(</span>r<span class="s1">&#39;C:\Gitlab\xxx\rrr&#39;</span>, r<span class="s1">&#39;/home/vagrant/xxx/rrr&#39;</span><span class="o">)</span>
+<span class="o">]</span>
+</pre></div>
+
+
+<p><strong>注意大小寫</strong></p>
+<ol>
+<li>新增程式
+當 py 執行到 settrace 會中斷去連結到 eclipse 的 debug server。 譬如寫在 run.py。
+在 ubuntu 執行 <strong>netstat -rn</strong> 可以知道 default gw 就是 Host(eclipse) 的IP。</li>
+</ol>
+<div class="highlight"><pre><span></span><span class="c1"># append path</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">r&#39;/usr/local/lib/python2.7/dist-packages&#39;</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">pydevd</span>
+<span class="c1"># breakpoint</span>
+<span class="n">pydevd</span><span class="o">.</span><span class="n">settrace</span><span class="p">(</span><span class="s1">&#39;10.0.2.2&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5678</span><span class="p">,</span> <span class="n">stdoutToServer</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">stderrToServer</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre></div>
 
 
 <ol>
-<li>上傳</li>
+<li>
+<p>啟動 eclipse debug server
+see <a href="http://brianfisher.name/content/remote-debugging-python-eclipse-and-pydev">PyDev | Remote Debugger</a></p>
+</li>
+<li>
+<p>執行python
+grunt serve</p>
+</li>
 </ol>
-<div class="highlight"><pre><span></span>git add --all
-git commit -m <span class="s2">&quot;Initial commit&quot;</span>
-git push
-</pre></div>
-
-
-<p><strong>記得輸入帳號密碼</strong></p>
-<h1>參考</h1>
-<ul>
-<li><a href="https://pages.github.com/">GiHub Pages</a></li>
-</ul>
-                    <a class="btn btn-default btn-xs" href="http://chihhunglin.github.io/ru-he-yong-you-zi-ji-de-github-wang-zhan.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
+<h1>重要</h1>
+<p>兩邊的程式碼一定要一樣，斷點才會有效果。</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
 
         </div>
         <div class="col-sm-3" id="sidebar">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog</title><link href="http://chihhunglin.github.io/" rel="alternate"></link><link href="http://chihhunglin.github.io/feeds/all.atom.xml" rel="self"></link><id>http://chihhunglin.github.io/</id><updated>2016-05-04T14:30:00+08:00</updated><entry><title>從 javascript 看 python</title><link href="http://chihhunglin.github.io/cong-javascript-kan-python.html" rel="alternate"></link><published>2016-05-04T14:30:00+08:00</published><author><name>Peter Lin</name></author><id>tag:chihhunglin.github.io,2016-05-04:cong-javascript-kan-python.html</id><summary type="html">&lt;p&gt;學習 &lt;a href="https://www.python.org/"&gt;Python&lt;/a&gt; 筆記，紀錄與 javascript 語法特別的地方．(不完整版)&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog</title><link href="http://chihhunglin.github.io/" rel="alternate"></link><link href="http://chihhunglin.github.io/feeds/python.atom.xml" rel="self"></link><id>http://chihhunglin.github.io/</id><updated>2016-05-04T14:30:00+08:00</updated><entry><title>從 javascript 看 python</title><link href="http://chihhunglin.github.io/cong-javascript-kan-python.html" rel="alternate"></link><published>2016-05-04T14:30:00+08:00</published><author><name>Peter Lin</name></author><id>tag:chihhunglin.github.io,2016-05-04:cong-javascript-kan-python.html</id><summary type="html">&lt;p&gt;學習 &lt;a href="https://www.python.org/"&gt;Python&lt;/a&gt; 筆記，紀錄與 javascript 語法特別的地方．(不完整版)&lt;/p&gt;
 &lt;h2&gt;The range() Function&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Mary&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;had&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;a&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;little&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;lamb&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
 &amp;gt;&amp;gt;&amp;gt; &lt;span class="k"&gt;for&lt;/span&gt; i in range&lt;span class="o"&gt;(&lt;/span&gt;len&lt;span class="o"&gt;(&lt;/span&gt;a&lt;span class="o"&gt;))&lt;/span&gt;:
@@ -110,72 +110,7 @@ print f&lt;span class="o"&gt;(&lt;/span&gt;3&lt;span class="o"&gt;)&lt;/span&gt;
 42
 &amp;gt;&amp;gt;&amp;gt; f&lt;span class="o"&gt;(&lt;/span&gt;1&lt;span class="o"&gt;)&lt;/span&gt;
 43
-&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>使用 Pelican 創造自己的 Github Pages blog</title><link href="http://chihhunglin.github.io/shi-yong-pelican-chuang-zao-zi-ji-de-github-pages-blog.html" rel="alternate"></link><published>2016-04-25T14:30:00+08:00</published><author><name>Peter Lin</name></author><id>tag:chihhunglin.github.io,2016-04-25:shi-yong-pelican-chuang-zao-zi-ji-de-github-pages-blog.html</id><summary type="html">&lt;p&gt;&lt;a href="http://docs.getpelican.com/en/3.6.3/"&gt;Pelican&lt;/a&gt; 用 python 寫成的靜態網頁產生工具．&lt;/p&gt;
-&lt;h1&gt;設定 github.io 網頁&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;建立兩個容器 &lt;ul&gt;
-&lt;li&gt;取得 &lt;strong&gt;GitHub&lt;/strong&gt; 帳號&lt;/li&gt;
-&lt;li&gt;建立 &lt;strong&gt;repository&lt;/strong&gt; ，命名規則 username.github.io-src and username.github.io(初始化加入README)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;安裝 Pelican&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install pelican markdown
-git clone https://github.com/username/username.github.io-src ghpages
-&lt;span class="nb"&gt;cd&lt;/span&gt; ghpages
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1&gt;使用 Pelican 設定 Blog&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git remote -v
-git submodule add https://github.com/username/username.github.io output
-pelican-quickstart
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;Where do you want to create your new web site? (hit Enter)&lt;/li&gt;
-&lt;li&gt;What will be the title of this web site? (ex:Blog)&lt;/li&gt;
-&lt;li&gt;Who will be the author of this web site? (ex:Peter)&lt;/li&gt;
-&lt;li&gt;What will be the default language of this web site? [en] (hit Enter)&lt;/li&gt;
-&lt;li&gt;Do you want to specify a URL prefix? e.g., http://example.com   (Y/n) (Y)&lt;/li&gt;
-&lt;li&gt;What is your URL prefix? (see above example; no trailing slash) (http://chihhunglin.github.io)&lt;/li&gt;
-&lt;li&gt;Do you want to enable article pagination? (Y/n) (n)&lt;/li&gt;
-&lt;li&gt;What is your time zone? [Europe/Paris] (Asia/Taipei)&lt;/li&gt;
-&lt;li&gt;Do you want to generate a Fabfile/Makefile to automate generation and publishing? (Y/n) (Y)&lt;/li&gt;
-&lt;li&gt;Do you want an auto-reload &amp;amp; simpleHTTP script to assist with theme and site development? (Y/n) (Y)&lt;/li&gt;
-&lt;li&gt;Upload mechanisms: choose No for all except Github Pages&lt;/li&gt;
-&lt;li&gt;Is this your personal page (username.github.io)? (y/N) (Y)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Open the publishconf.py file and set the DELETE_OUTPUT_DIRECTORY variable to False.&lt;/p&gt;
-&lt;p&gt;Error: [Errno 17] File exists: '/Users/hung/Github/ghpages/output' (這個錯誤不用理）&lt;/p&gt;
-&lt;h1&gt;Init, update submodule (非必要)&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git submodule init
-git submodule update
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1&gt;Build, commit, push, 完成!&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;make html &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; make serve
-make publish
-
-&lt;span class="nb"&gt;cd&lt;/span&gt; output
-git add .
-git commit -m &lt;span class="s2"&gt;&amp;quot;First commit.&amp;quot;&lt;/span&gt;
-git push -u origin master
-&lt;span class="nb"&gt;cd&lt;/span&gt; ..
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;*.pyc&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; .gitignore &lt;span class="c1"&gt;#don&amp;#39;t need pyc files&lt;/span&gt;
-git add .
-git commit -m &lt;span class="s2"&gt;&amp;quot;First commit.&amp;quot;&lt;/span&gt;
-git push -u origin master
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1&gt;參考&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://pages.github.com/"&gt;GiHub Pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://fedoramagazine.org/make-github-pages-blog-with-pelican/"&gt;Make a Github Pages blog with Pelican&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>Remote Debugging Python with Eclipse and PyDev</title><link href="http://chihhunglin.github.io/remote-debugging-python-with-eclipse-and-pydev.html" rel="alternate"></link><published>2014-12-27T14:30:00+08:00</published><author><name>Peter Lin</name></author><id>tag:chihhunglin.github.io,2014-12-27:remote-debugging-python-with-eclipse-and-pydev.html</id><summary type="html">&lt;p&gt;原文請參閱&lt;a href="http://brianfisher.name/content/remote-debugging-python-eclipse-and-pydev"&gt;Blog&lt;/a&gt;，本文新增自己的實作過程。
+&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>Remote Debugging Python with Eclipse and PyDev</title><link href="http://chihhunglin.github.io/remote-debugging-python-with-eclipse-and-pydev.html" rel="alternate"></link><published>2014-12-27T14:30:00+08:00</published><author><name>Peter Lin</name></author><id>tag:chihhunglin.github.io,2014-12-27:remote-debugging-python-with-eclipse-and-pydev.html</id><summary type="html">&lt;p&gt;原文請參閱&lt;a href="http://brianfisher.name/content/remote-debugging-python-eclipse-and-pydev"&gt;Blog&lt;/a&gt;，本文新增自己的實作過程。
 環境介紹&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Local : Win8 + eclipse + PyDev&lt;/p&gt;
@@ -269,38 +204,4 @@ grunt serve&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1&gt;重要&lt;/h1&gt;
-&lt;p&gt;兩邊的程式碼一定要一樣，斷點才會有效果。&lt;/p&gt;</summary></entry><entry><title>如何擁有自己的 GitHub 網站</title><link href="http://chihhunglin.github.io/ru-he-yong-you-zi-ji-de-github-wang-zhan.html" rel="alternate"></link><published>2014-12-09T10:21:00+08:00</published><author><name>Peter Lin</name></author><id>tag:chihhunglin.github.io,2014-12-09:ru-he-yong-you-zi-ji-de-github-wang-zhan.html</id><summary type="html">&lt;h1&gt;步驟&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;建立容器 &lt;ul&gt;
-&lt;li&gt;取得&lt;strong&gt;GitHub&lt;/strong&gt;帳號&lt;/li&gt;
-&lt;li&gt;建立&lt;strong&gt;repository&lt;/strong&gt;，命名規則 username.github.io&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;複製容器&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone https://github.com/username/username.github.io
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;世界您好&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; username.github.io
-&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Hello World&amp;quot;&lt;/span&gt; &amp;gt; index.html
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ol&gt;
-&lt;li&gt;上傳&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git add --all
-git commit -m &lt;span class="s2"&gt;&amp;quot;Initial commit&amp;quot;&lt;/span&gt;
-git push
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;&lt;strong&gt;記得輸入帳號密碼&lt;/strong&gt;&lt;/p&gt;
-&lt;h1&gt;參考&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://pages.github.com/"&gt;GiHub Pages&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary></entry></feed>
+&lt;p&gt;兩邊的程式碼一定要一樣，斷點才會有效果。&lt;/p&gt;</summary></entry></feed>
