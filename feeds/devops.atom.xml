@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog</title><link href="http://chihhunglin.github.io/" rel="alternate"></link><link href="http://chihhunglin.github.io/feeds/devops.atom.xml" rel="self"></link><id>http://chihhunglin.github.io/</id><updated>2016-05-06T17:30:00+08:00</updated><entry><title>使用 Packer 建立 Windows VM box</title><link href="http://chihhunglin.github.io/shi-yong-packer-jian-li-windows-vm-box.html" rel="alternate"></link><published>2016-05-06T17:30:00+08:00</published><author><name>Peter Lin</name></author><id>tag:chihhunglin.github.io,2016-05-06:shi-yong-packer-jian-li-windows-vm-box.html</id><summary type="html">&lt;p&gt;學習 &lt;a href="https://www.packer.io/"&gt;Packer&lt;/a&gt; 筆記．(不完整版)&lt;/p&gt;
+&lt;h2&gt;安裝&lt;/h2&gt;
+&lt;p&gt;參閱官方&lt;a href="https://www.packer.io/docs/installation.html"&gt;文件&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;實作 Windows&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://stefanscherer.github.io/setup-local-windows-2016-tp5-docker-vm/"&gt;Setup a local Windows 2016 TP5 Docker VM&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Run Packer&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Packer version : 0.10.0&lt;/li&gt;
+&lt;li&gt;Virtualbox version : 5.0.20&lt;/li&gt;
+&lt;li&gt;Vagrant : 1.8.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone https://github.com/StefanScherer/packer-windows  
+&lt;span class="nb"&gt;cd&lt;/span&gt; packer-windows 
+
+packer build --only&lt;span class="o"&gt;=&lt;/span&gt;virtualbox-iso windows_2016_docker.json  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blogs.technet.microsoft.com/ausoemteam/2016/04/28/windows-server-2016-technical-preview-5-available-for-download/"&gt;key&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;參考&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/seterrychen/packer-vagrant-vbox"&gt;Using Packer to package Vagrant box(driver: Virtualbox) by Docker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary></entry></feed>

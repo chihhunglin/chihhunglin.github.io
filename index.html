@@ -52,6 +52,9 @@ Blog            </a>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li >
+                            <a href="http://chihhunglin.github.io/category/devops.html">Devops</a>
+                        </li>
+                        <li >
                             <a href="http://chihhunglin.github.io/category/github.html">Github</a>
                         </li>
                         <li >
@@ -82,6 +85,34 @@ Blog            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
+            <article>
+                <h2><a href="http://chihhunglin.github.io/shi-yong-packer-jian-li-windows-vm-box.html">使用 Packer 建立 Windows VM box</a></h2>
+                <div class="summary"><p>學習 <a href="https://www.packer.io/">Packer</a> 筆記．(不完整版)</p>
+<h2>安裝</h2>
+<p>參閱官方<a href="https://www.packer.io/docs/installation.html">文件</a></p>
+<h2>實作 Windows</h2>
+<p><a href="https://stefanscherer.github.io/setup-local-windows-2016-tp5-docker-vm/">Setup a local Windows 2016 TP5 Docker VM</a></p>
+<h2>Run Packer</h2>
+<ul>
+<li>Packer version : 0.10.0</li>
+<li>Virtualbox version : 5.0.20</li>
+<li>Vagrant : 1.8.1</li>
+</ul>
+<div class="highlight"><pre><span></span>git clone https://github.com/StefanScherer/packer-windows  
+<span class="nb">cd</span> packer-windows 
+
+packer build --only<span class="o">=</span>virtualbox-iso windows_2016_docker.json  
+</pre></div>
+
+
+<ul>
+<li><a href="https://blogs.technet.microsoft.com/ausoemteam/2016/04/28/windows-server-2016-technical-preview-5-available-for-download/">key</a></li>
+</ul>
+<h1>參考 ...</h1>
+                    <a class="btn btn-default btn-xs" href="http://chihhunglin.github.io/shi-yong-packer-jian-li-windows-vm-box.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
             <article>
                 <h2><a href="http://chihhunglin.github.io/cong-javascript-kan-python.html">從 javascript 看 python</a></h2>
                 <div class="summary"><p>學習 <a href="https://www.python.org/">Python</a> 筆記，紀錄與 javascript 語法特別的地方．(不完整版)</p>

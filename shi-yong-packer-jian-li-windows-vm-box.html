@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>如何擁有自己的 GitHub 網站 - Blog</title>
+    <title>使用 Packer 建立 Windows VM box - Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,18 +10,18 @@
 
     <link href="http://chihhunglin.github.io/images/favicon.jpg" rel="icon">
 
-<link rel="canonical" href="http://chihhunglin.github.io/ru-he-yong-you-zi-ji-de-github-wang-zhan.html">
+<link rel="canonical" href="http://chihhunglin.github.io/shi-yong-packer-jian-li-windows-vm-box.html">
 
         <meta name="author" content="Peter Lin" />
-        <meta name="description" content="步驟 建立容器 取得GitHub帳號 建立repository，命名規則 username.github.io 複製容器 git clone https://github.com/username/username.github.io 世界您好 cd username.github.io echo &#34;Hello World&#34; &gt; index.html 上傳 git add --all git commit -m &#34;Initial commit&#34; git push 記得輸入帳號密碼 參考 GiHub Pages" />
+        <meta name="description" content="學習 Packer 筆記．(不完整版) 安裝 參閱官方文件 實作 Windows Setup a local Windows 2016 TP5 Docker VM Run Packer Packer version : 0.10.0 Virtualbox version : 5.0.20 Vagrant : 1.8.1 git clone https://github.com/StefanScherer/packer-windows cd packer-windows packer build --only=virtualbox-iso windows_2016_docker.json key 參考 ..." />
 
         <meta property="og:site_name" content="Blog" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="如何擁有自己的 GitHub 網站"/>
-        <meta property="og:url" content="http://chihhunglin.github.io/ru-he-yong-you-zi-ji-de-github-wang-zhan.html"/>
-        <meta property="og:description" content="步驟 建立容器 取得GitHub帳號 建立repository，命名規則 username.github.io 複製容器 git clone https://github.com/username/username.github.io 世界您好 cd username.github.io echo &#34;Hello World&#34; &gt; index.html 上傳 git add --all git commit -m &#34;Initial commit&#34; git push 記得輸入帳號密碼 參考 GiHub Pages"/>
-        <meta property="article:published_time" content="2014-12-09" />
-            <meta property="article:section" content="Github" />
+        <meta property="og:title" content="使用 Packer 建立 Windows VM box"/>
+        <meta property="og:url" content="http://chihhunglin.github.io/shi-yong-packer-jian-li-windows-vm-box.html"/>
+        <meta property="og:description" content="學習 Packer 筆記．(不完整版) 安裝 參閱官方文件 實作 Windows Setup a local Windows 2016 TP5 Docker VM Run Packer Packer version : 0.10.0 Virtualbox version : 5.0.20 Vagrant : 1.8.1 git clone https://github.com/StefanScherer/packer-windows cd packer-windows packer build --only=virtualbox-iso windows_2016_docker.json key 參考 ..."/>
+        <meta property="article:published_time" content="2016-05-06" />
+            <meta property="article:section" content="DevOps" />
             <meta property="article:author" content="Peter Lin" />
 
 
@@ -37,8 +37,8 @@
 
 
 
-        <link href="http://chihhunglin.github.io/feeds/github.atom.xml" type="application/atom+xml" rel="alternate"
-              title="Blog Github ATOM Feed"/>
+        <link href="http://chihhunglin.github.io/feeds/devops.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Blog DevOps ATOM Feed"/>
 
 </head>
 <body>
@@ -57,10 +57,10 @@ Blog            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                        <li >
+                        <li class="active">
                             <a href="http://chihhunglin.github.io/category/devops.html">Devops</a>
                         </li>
-                        <li class="active">
+                        <li >
                             <a href="http://chihhunglin.github.io/category/github.html">Github</a>
                         </li>
                         <li >
@@ -83,10 +83,10 @@ Blog            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="http://chihhunglin.github.io/ru-he-yong-you-zi-ji-de-github-wang-zhan.html"
+                    <a href="http://chihhunglin.github.io/shi-yong-packer-jian-li-windows-vm-box.html"
                        rel="bookmark"
-                       title="Permalink to 如何擁有自己的 GitHub 網站">
-                        如何擁有自己的 GitHub 網站
+                       title="Permalink to 使用 Packer 建立 Windows VM box">
+                        使用 Packer 建立 Windows VM box
                     </a>
                 </h1>
             </header>
@@ -96,7 +96,7 @@ Blog            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2014-12-09T10:21:00+08:00"> 二 09 12月 2014</time>
+        <i class="fa fa-calendar"></i><time datetime="2016-05-06T17:30:00+08:00"> 五 06 5月 2016</time>
     </span>
 
 
@@ -106,40 +106,30 @@ Blog            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <h1>步驟</h1>
-<ol>
-<li>建立容器 <ul>
-<li>取得<strong>GitHub</strong>帳號</li>
-<li>建立<strong>repository</strong>，命名規則 username.github.io</li>
+                <p>學習 <a href="https://www.packer.io/">Packer</a> 筆記．(不完整版)</p>
+<h2>安裝</h2>
+<p>參閱官方<a href="https://www.packer.io/docs/installation.html">文件</a></p>
+<h2>實作 Windows</h2>
+<p><a href="https://stefanscherer.github.io/setup-local-windows-2016-tp5-docker-vm/">Setup a local Windows 2016 TP5 Docker VM</a></p>
+<h2>Run Packer</h2>
+<ul>
+<li>Packer version : 0.10.0</li>
+<li>Virtualbox version : 5.0.20</li>
+<li>Vagrant : 1.8.1</li>
 </ul>
-</li>
-<li>複製容器</li>
-</ol>
-<div class="highlight"><pre><span></span>git clone https://github.com/username/username.github.io
+<div class="highlight"><pre><span></span>git clone https://github.com/StefanScherer/packer-windows  
+<span class="nb">cd</span> packer-windows 
+
+packer build --only<span class="o">=</span>virtualbox-iso windows_2016_docker.json  
 </pre></div>
 
 
-<ol>
-<li>世界您好</li>
-</ol>
-<div class="highlight"><pre><span></span><span class="nb">cd</span> username.github.io
-<span class="nb">echo</span> <span class="s2">&quot;Hello World&quot;</span> &gt; index.html
-</pre></div>
-
-
-<ol>
-<li>上傳</li>
-</ol>
-<div class="highlight"><pre><span></span>git add --all
-git commit -m <span class="s2">&quot;Initial commit&quot;</span>
-git push
-</pre></div>
-
-
-<p><strong>記得輸入帳號密碼</strong></p>
+<ul>
+<li><a href="https://blogs.technet.microsoft.com/ausoemteam/2016/04/28/windows-server-2016-technical-preview-5-available-for-download/">key</a></li>
+</ul>
 <h1>參考</h1>
 <ul>
-<li><a href="https://pages.github.com/">GiHub Pages</a></li>
+<li><a href="https://github.com/seterrychen/packer-vagrant-vbox">Using Packer to package Vagrant box(driver: Virtualbox) by Docker</a></li>
 </ul>
             </div>
             <!-- /.entry-content -->
