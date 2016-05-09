@@ -23,4 +23,83 @@ packer build --only&lt;span class="o"&gt;=&lt;/span&gt;virtualbox-iso windows_20
 &lt;h1&gt;參考&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/seterrychen/packer-vagrant-vbox"&gt;Using Packer to package Vagrant box(driver: Virtualbox) by Docker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary></entry></feed>
+&lt;/ul&gt;</summary></entry><entry><title>Vagrant + Ansible</title><link href="http://chihhunglin.github.io/vagrant-ansible.html" rel="alternate"></link><published>2015-01-27T17:30:00+08:00</published><author><name>Peter Lin</name></author><id>tag:chihhunglin.github.io,2015-01-27:vagrant-ansible.html</id><summary type="html">&lt;h1&gt;Vagrant&lt;/h1&gt;
+&lt;h2&gt;&lt;a href="http://www.codedata.com.tw/social-coding/vagrant-tutorial-2-playing-vm-with-vagrant/"&gt;虛擬機&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir demo-1
+cd demo-1
+vagrant init ubuntu/trusty64
+vagrant up
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;登入Ubuntu&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;vagrant ssh
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;登出&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;vagrant$  exit
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;關機&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;vagrant halt
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1&gt;Ansible&lt;/h1&gt;
+&lt;h2&gt;安裝&lt;a href="http://docs.ansible.com/intro_installation.html#latest-releases-via-apt-ubuntu"&gt;Ansible&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get install software-properties-common
+$ sudo apt-add-repository ppa:ansible/ansible
+$ sudo apt-get update
+$ sudo apt-get install ansible
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;配置&lt;a href="http://askubuntu.com/questions/46424/adding-ssh-keys-to-authorized-keys"&gt;authorized_keys&lt;/a&gt;&lt;/h2&gt;
+&lt;h3&gt;產生key&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ssh-keygen -t rsa
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;配置遠端public key&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ cat ~/.ssh/id_rsa.pub &lt;span class="p"&gt;|&lt;/span&gt; ssh USER@HOST &lt;span class="s2"&gt;&amp;quot;mkdir -p ~/.ssh &amp;amp;&amp;amp; cat &amp;gt;&amp;gt; ~/.ssh/authorized_keys&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;&lt;a href="http://www.lemonlatte.tw/tags/Ansible"&gt;基礎用法&lt;/a&gt;&lt;/h2&gt;
+&lt;h3&gt;編輯inventory file&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hosts  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[test]          
+127.0.0.1
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;ping module&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ansible -m ping -i hosts -u vagrant &lt;span class="nb"&gt;test&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;&lt;a href="http://www.codedata.com.tw/social-coding/ansible-github/"&gt;利用 Ansible 部署 GitHub 專案的設定細節&lt;/a&gt;&lt;/h2&gt;
+&lt;h3&gt;clone 範例&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/William-Yeh/ansible-git-deploy-demo.git
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;下載 roles&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; ansible-git-deploy-demo/public-repo
+$ ansible-galaxy install -f  -r requirements.yml
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;執行劇本&lt;/h3&gt;
+&lt;h4&gt;編輯hosts&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ ansible-playbook -i hosts -u vagrant playbook.yml
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;確認安裝成功&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;wrk --help
+&lt;/pre&gt;&lt;/div&gt;</summary></entry></feed>

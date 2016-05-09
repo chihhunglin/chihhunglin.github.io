@@ -104,6 +104,53 @@ packer build --only<span class="o">=</span>virtualbox-iso windows_2016_docker.js
                 </div>
             </article>
             <hr/>
+            <article>
+                <h2><a href="http://chihhunglin.github.io/vagrant-ansible.html">Vagrant + Ansible</a></h2>
+                <div class="summary"><h1>Vagrant</h1>
+<h2><a href="http://www.codedata.com.tw/social-coding/vagrant-tutorial-2-playing-vm-with-vagrant/">虛擬機</a></h2>
+<div class="highlight"><pre><span></span>mkdir demo-1
+cd demo-1
+vagrant init ubuntu/trusty64
+vagrant up
+</pre></div>
+
+
+<h2>登入Ubuntu</h2>
+<div class="highlight"><pre><span></span>vagrant ssh
+</pre></div>
+
+
+<h2>登出</h2>
+<div class="highlight"><pre><span></span>vagrant$  exit
+</pre></div>
+
+
+<h2>關機</h2>
+<div class="highlight"><pre><span></span>vagrant halt
+</pre></div>
+
+
+<h1>Ansible</h1>
+<h2>安裝<a href="http://docs.ansible.com/intro_installation.html#latest-releases-via-apt-ubuntu">Ansible</a></h2>
+<div class="highlight"><pre><span></span>$ sudo apt-get install software-properties-common
+$ sudo apt-add-repository ppa:ansible/ansible
+$ sudo apt-get update
+$ sudo apt-get install ansible
+</pre></div>
+
+
+<h2>配置<a href="http://askubuntu.com/questions/46424/adding-ssh-keys-to-authorized-keys">authorized_keys</a></h2>
+<h3>產生key</h3>
+<div class="highlight"><pre><span></span>$ ssh-keygen -t rsa
+</pre></div>
+
+
+<h3>配置遠端public key</h3>
+<div class="highlight"><pre><span></span>$ cat ~/.ssh ...</pre></div>
+                    <a class="btn btn-default btn-xs" href="http://chihhunglin.github.io/vagrant-ansible.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
 
         </div>
         <div class="col-sm-3" id="sidebar">
