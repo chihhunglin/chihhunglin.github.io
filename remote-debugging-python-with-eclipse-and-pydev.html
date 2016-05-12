@@ -66,6 +66,9 @@ Blog            </a>
                         <li class="active">
                             <a href="http://chihhunglin.github.io/category/python.html">Python</a>
                         </li>
+                        <li >
+                            <a href="http://chihhunglin.github.io/category/web.html">Web</a>
+                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="http://chihhunglin.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
@@ -96,7 +99,7 @@ Blog            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2014-12-27T14:30:00+08:00"> 六 27 12月 2014</time>
+        <i class="fa fa-calendar"></i><time datetime="2014-12-27T14:30:00+08:00"> Sat 27 December 2014</time>
     </span>
 
 
@@ -142,23 +145,23 @@ Blog            </a>
 <p>複製pydev到遠端機器</p>
 </li>
 </ol>
-<div class="highlight"><pre><span></span>find /Applications/eclipse/plugins -name <span class="s1">&#39;org.python.pydev_*&#39;</span>
+<div class="highlight"><pre>find /Applications/eclipse/plugins -name <span class="s1">&#39;org.python.pydev_*&#39;</span>
 </pre></div>
 
 
 <p>e.g. /Applications/eclipse/plugins/org.python.pydev_2.8.2.2013090511</p>
-<div class="highlight"><pre><span></span>    將檔案放置到正確路徑
+<div class="highlight"><pre>    將檔案放置到正確路徑
 </pre></div>
 
 
-<div class="highlight"><pre><span></span>python -c <span class="s2">&quot;import sys</span>
+<div class="highlight"><pre>python -c <span class="s2">&quot;import sys</span>
 <span class="s2">from pprint import pprint as pp</span>
 <span class="s2">pp(sys.path)&quot;</span>
 </pre></div>
 
 
 <p>e.g. /usr/local/lib/python2.7/dist-packages</p>
-<div class="highlight"><pre><span></span>ssh vagrant@example.dev mkdir pysrc
+<div class="highlight"><pre>ssh vagrant@example.dev mkdir pysrc
 scp -r /Applications/eclipse/plugins/org.python.pydev_2.8.2.2013090511/pysrc/* vagrant@example.dev:pysrc
 ssh vagrant@example.dev <span class="s1">&#39;sudo cp -R pysrc/* /usr/local/lib/python2.7/dist-packages/&#39;</span>
 ssh vagrant@example.dev rm -r pysrc
@@ -169,7 +172,7 @@ ssh vagrant@example.dev rm -r pysrc
 <li>設定路徑對照
 在 ubuntu 編輯 /usr/local/lib/python2.7/dist-packages/pydevd_file_utils.py</li>
 </ol>
-<div class="highlight"><pre><span></span><span class="nv">PATHS_FROM_ECLIPSE_TO_PYTHON</span> <span class="o">=</span> <span class="o">[</span>
+<div class="highlight"><pre><span class="nv">PATHS_FROM_ECLIPSE_TO_PYTHON</span> <span class="o">=</span> <span class="o">[</span>
         <span class="o">(</span>r<span class="s1">&#39;C:\Gitlab\xxx\rrr&#39;</span>, r<span class="s1">&#39;/home/vagrant/xxx/rrr&#39;</span><span class="o">)</span>
 <span class="o">]</span>
 </pre></div>
@@ -181,7 +184,7 @@ ssh vagrant@example.dev rm -r pysrc
 當 py 執行到 settrace 會中斷去連結到 eclipse 的 debug server。 譬如寫在 run.py。
 在 ubuntu 執行 <strong>netstat -rn</strong> 可以知道 default gw 就是 Host(eclipse) 的IP。</li>
 </ol>
-<div class="highlight"><pre><span></span><span class="c1"># append path</span>
+<div class="highlight"><pre><span class="c1"># append path</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">r&#39;/usr/local/lib/python2.7/dist-packages&#39;</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">pydevd</span>
 <span class="c1"># breakpoint</span>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>使用 Packer 建立 Windows VM box - Blog</title>
+    <title>web - Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,19 +10,16 @@
 
     <link href="http://chihhunglin.github.io/images/favicon.jpg" rel="icon">
 
-<link rel="canonical" href="http://chihhunglin.github.io/shi-yong-packer-jian-li-windows-vm-box.html">
 
-        <meta name="author" content="Peter Lin" />
-        <meta name="description" content="學習 Packer 筆記．(不完整版) 安裝 參閱官方文件 實作 Windows Setup a local Windows 2016 TP5 Docker VM Run Packer Packer version : 0.10.0 Virtualbox version : 5.0.20 Vagrant : 1.8.1 git clone https://github.com/StefanScherer/packer-windows cd packer-windows packer build --only=virtualbox-iso windows_2016_docker.json key 參考 ..." />
+    <meta name="author" content="Peter Lin" />
+    <meta name="keywords" content="web" />
 
+    <!-- Open Graph tags -->
         <meta property="og:site_name" content="Blog" />
-        <meta property="og:type" content="article"/>
-        <meta property="og:title" content="使用 Packer 建立 Windows VM box"/>
-        <meta property="og:url" content="http://chihhunglin.github.io/shi-yong-packer-jian-li-windows-vm-box.html"/>
-        <meta property="og:description" content="學習 Packer 筆記．(不完整版) 安裝 參閱官方文件 實作 Windows Setup a local Windows 2016 TP5 Docker VM Run Packer Packer version : 0.10.0 Virtualbox version : 5.0.20 Vagrant : 1.8.1 git clone https://github.com/StefanScherer/packer-windows cd packer-windows packer build --only=virtualbox-iso windows_2016_docker.json key 參考 ..."/>
-        <meta property="article:published_time" content="2016-05-06" />
-            <meta property="article:section" content="DevOps" />
-            <meta property="article:author" content="Peter Lin" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Blog"/>
+        <meta property="og:url" content="http://chihhunglin.github.io"/>
+        <meta property="og:description" content="Blog"/>
 
 
     <!-- Bootstrap -->
@@ -37,8 +34,8 @@
 
 
 
-        <link href="http://chihhunglin.github.io/feeds/devops.atom.xml" type="application/atom+xml" rel="alternate"
-              title="Blog DevOps ATOM Feed"/>
+        <link href="http://chihhunglin.github.io/feeds/web.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Blog web ATOM Feed"/>
 
 </head>
 <body>
@@ -57,7 +54,7 @@ Blog            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                        <li class="active">
+                        <li >
                             <a href="http://chihhunglin.github.io/category/devops.html">Devops</a>
                         </li>
                         <li >
@@ -66,7 +63,7 @@ Blog            </a>
                         <li >
                             <a href="http://chihhunglin.github.io/category/python.html">Python</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="http://chihhunglin.github.io/category/web.html">Web</a>
                         </li>
             </ul>
@@ -82,62 +79,30 @@ Blog            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-    <section id="content">
-        <article>
-            <header class="page-header">
-                <h1>
-                    <a href="http://chihhunglin.github.io/shi-yong-packer-jian-li-windows-vm-box.html"
-                       rel="bookmark"
-                       title="Permalink to 使用 Packer 建立 Windows VM box">
-                        使用 Packer 建立 Windows VM box
-                    </a>
-                </h1>
-            </header>
-            <div class="entry-content">
-                <div class="panel">
-                    <div class="panel-body">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-05-06T17:30:00+08:00"> Fri 06 May 2016</time>
-    </span>
-
-
-
-
-
-    
-</footer><!-- /.post-info -->                    </div>
-                </div>
-                <p>學習 <a href="https://www.packer.io/">Packer</a> 筆記．(不完整版)</p>
+            <article>
+                <h2><a href="http://chihhunglin.github.io/ce-shi-extjs.html">測試 Extjs</a></h2>
+                <div class="summary"><p>學習 <a href="https://www.sencha.com/">Ext JS</a> 筆記．</p>
 <h2>安裝</h2>
-<p>參閱官方<a href="https://www.packer.io/docs/installation.html">文件</a></p>
-<h2>實作 Windows</h2>
-<p><a href="https://stefanscherer.github.io/setup-local-windows-2016-tp5-docker-vm/">Setup a local Windows 2016 TP5 Docker VM</a></p>
-<h2>Run Packer</h2>
+<p>參閱官方<a href="http://docs.sencha.com/extjs/6.0/getting_started/welcome_to_extjs.html">文件</a></p>
 <ul>
-<li>Packer version : 0.10.0</li>
-<li>Virtualbox version : 5.0.20</li>
-<li>Vagrant : 1.8.1</li>
+<li>下載試用版 : Download and Install Sencha Cmd 6</li>
+<li>下載SDK : Download and unzip the Ext JS SDK</li>
 </ul>
-<div class="highlight"><pre>git clone https://github.com/StefanScherer/packer-windows  
-<span class="nb">cd</span> packer-windows 
-
-packer build --only<span class="o">=</span>virtualbox-iso windows_2016_docker.json  
+<h2>使用 Sencha Cmd 建立 Ext JS 6 應用程式</h2>
+<ul>
+<li>打開console window (小魯的是 Win10)</li>
+<li><a href="https://docs.sencha.com/cmd/6.x/extjs/cmd_app.html">操作手冊</a></li>
+</ul>
+<div class="highlight"><pre>sencha -sdk /path/to/ext6 generate app MyApp /path/to/my-app
 </pre></div>
 
 
-<ul>
-<li><a href="https://blogs.technet.microsoft.com/ausoemteam/2016/04/28/windows-server-2016-technical-preview-5-available-for-download/">key</a></li>
-</ul>
-<h1>參考</h1>
-<ul>
-<li><a href="https://github.com/seterrychen/packer-vagrant-vbox">Using Packer to package Vagrant box(driver: Virtualbox) by Docker</a></li>
-</ul>
-            </div>
-            <!-- /.entry-content -->
-        </article>
-    </section>
+<h3>進行開發</h3>
+<div class="highlight"><pre><span class="nb">cd</span> /path/to ...</pre></div>
+                    <a class="btn btn-default btn-xs" href="http://chihhunglin.github.io/ce-shi-extjs.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
 
         </div>
         <div class="col-sm-3" id="sidebar">

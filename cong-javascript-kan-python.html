@@ -66,6 +66,9 @@ Blog            </a>
                         <li class="active">
                             <a href="http://chihhunglin.github.io/category/python.html">Python</a>
                         </li>
+                        <li >
+                            <a href="http://chihhunglin.github.io/category/web.html">Web</a>
+                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="http://chihhunglin.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
@@ -96,7 +99,7 @@ Blog            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-05-04T14:30:00+08:00"> 三 04 5月 2016</time>
+        <i class="fa fa-calendar"></i><time datetime="2016-05-04T14:30:00+08:00"> Wed 04 May 2016</time>
     </span>
 
 
@@ -108,7 +111,7 @@ Blog            </a>
                 </div>
                 <p>學習 <a href="https://www.python.org/">Python</a> 筆記，紀錄與 javascript 語法特別的地方．(不完整版)</p>
 <h2>The range() Function</h2>
-<div class="highlight"><pre><span></span>&gt;&gt;&gt; <span class="nv">a</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;Mary&#39;</span>, <span class="s1">&#39;had&#39;</span>, <span class="s1">&#39;a&#39;</span>, <span class="s1">&#39;little&#39;</span>, <span class="s1">&#39;lamb&#39;</span><span class="o">]</span>
+<div class="highlight"><pre>&gt;&gt;&gt; <span class="nv">a</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;Mary&#39;</span>, <span class="s1">&#39;had&#39;</span>, <span class="s1">&#39;a&#39;</span>, <span class="s1">&#39;little&#39;</span>, <span class="s1">&#39;lamb&#39;</span><span class="o">]</span>
 &gt;&gt;&gt; <span class="k">for</span> i in range<span class="o">(</span>len<span class="o">(</span>a<span class="o">))</span>:
 ...     print i, a<span class="o">[</span>i<span class="o">]</span>
 ...
@@ -121,7 +124,7 @@ Blog            </a>
 
 
 <h2>break and continue Statements, and else Clauses on Loops</h2>
-<div class="highlight"><pre><span></span>&gt;&gt;&gt; <span class="k">for</span> n in range<span class="o">(</span>2, 10<span class="o">)</span>:
+<div class="highlight"><pre>&gt;&gt;&gt; <span class="k">for</span> n in range<span class="o">(</span>2, 10<span class="o">)</span>:
 ...     <span class="k">for</span> x in range<span class="o">(</span>2, n<span class="o">)</span>:
 ...         <span class="k">if</span> n % <span class="nv">x</span> <span class="o">==</span> 0:
 ...             print n, <span class="s1">&#39;equals&#39;</span>, x, <span class="s1">&#39;*&#39;</span>, n/x
@@ -141,7 +144,7 @@ Blog            </a>
 </pre></div>
 
 
-<div class="highlight"><pre><span></span>&gt;&gt;&gt; <span class="k">for</span> num in range<span class="o">(</span>2, 10<span class="o">)</span>:
+<div class="highlight"><pre>&gt;&gt;&gt; <span class="k">for</span> num in range<span class="o">(</span>2, 10<span class="o">)</span>:
 ...     <span class="k">if</span> num % <span class="nv">2</span> <span class="o">==</span> 0:
 ...         print <span class="s2">&quot;Found an even number&quot;</span>, num
 ...         <span class="k">continue</span>
@@ -158,26 +161,26 @@ Found a number 9
 
 
 <h2>pass Statements</h2>
-<div class="highlight"><pre><span></span>&gt;&gt;&gt; <span class="k">while</span> True:
+<div class="highlight"><pre>&gt;&gt;&gt; <span class="k">while</span> True:
 ...     pass  <span class="c1"># Busy-wait for keyboard interrupt (Ctrl+C)</span>
 ...
 </pre></div>
 
 
-<div class="highlight"><pre><span></span>&gt;&gt;&gt; class MyEmptyClass:
+<div class="highlight"><pre>&gt;&gt;&gt; class MyEmptyClass:
 ...     pass
 ...
 </pre></div>
 
 
-<div class="highlight"><pre><span></span>&gt;&gt;&gt; def initlog<span class="o">(</span>*args<span class="o">)</span>:
+<div class="highlight"><pre>&gt;&gt;&gt; def initlog<span class="o">(</span>*args<span class="o">)</span>:
 ...     pass   <span class="c1"># Remember to implement this!</span>
 ...
 </pre></div>
 
 
 <h2>The default value is evaluated only once.</h2>
-<div class="highlight"><pre><span></span>def f<span class="o">(</span>a, <span class="nv">L</span><span class="o">=[])</span>:
+<div class="highlight"><pre>def f<span class="o">(</span>a, <span class="nv">L</span><span class="o">=[])</span>:
     L.append<span class="o">(</span>a<span class="o">)</span>
     <span class="k">return</span> L
 
@@ -187,7 +190,7 @@ print f<span class="o">(</span>3<span class="o">)</span>
 </pre></div>
 
 
-<div class="highlight"><pre><span></span>def f<span class="o">(</span>a, <span class="nv">L</span><span class="o">=</span>None<span class="o">)</span>:
+<div class="highlight"><pre>def f<span class="o">(</span>a, <span class="nv">L</span><span class="o">=</span>None<span class="o">)</span>:
     <span class="k">if</span> L is None:
         <span class="nv">L</span> <span class="o">=</span> <span class="o">[]</span>
     L.append<span class="o">(</span>a<span class="o">)</span>
@@ -196,7 +199,7 @@ print f<span class="o">(</span>3<span class="o">)</span>
 
 
 <h2>Keyword Arguments</h2>
-<div class="highlight"><pre><span></span>def cheeseshop<span class="o">(</span>kind, *arguments, **keywords<span class="o">)</span>:
+<div class="highlight"><pre>def cheeseshop<span class="o">(</span>kind, *arguments, **keywords<span class="o">)</span>:
     print <span class="s2">&quot;-- Do you have any&quot;</span>, kind, <span class="s2">&quot;?&quot;</span>
     print <span class="s2">&quot;-- I&#39;m sorry, we&#39;re all out of&quot;</span>, kind
     <span class="k">for</span> arg in arguments:
@@ -209,7 +212,7 @@ print f<span class="o">(</span>3<span class="o">)</span>
 
 
 <h2>Lambda Expressions</h2>
-<div class="highlight"><pre><span></span>&gt;&gt;&gt; def make_incrementor<span class="o">(</span>n<span class="o">)</span>:
+<div class="highlight"><pre>&gt;&gt;&gt; def make_incrementor<span class="o">(</span>n<span class="o">)</span>:
 ...     <span class="k">return</span> lambda x: x + n
 ...
 &gt;&gt;&gt; <span class="nv">f</span> <span class="o">=</span> make_incrementor<span class="o">(</span>42<span class="o">)</span>

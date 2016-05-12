@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog</title><link href="http://chihhunglin.github.io/" rel="alternate"></link><link href="http://chihhunglin.github.io/feeds/web.atom.xml" rel="self"></link><id>http://chihhunglin.github.io/</id><updated>2016-05-12T14:30:00+08:00</updated><entry><title>測試 Extjs</title><link href="http://chihhunglin.github.io/ce-shi-extjs.html" rel="alternate"></link><published>2016-05-12T14:30:00+08:00</published><author><name>Peter Lin</name></author><id>tag:chihhunglin.github.io,2016-05-12:ce-shi-extjs.html</id><summary type="html">&lt;p&gt;學習 &lt;a href="https://www.sencha.com/"&gt;Ext JS&lt;/a&gt; 筆記．&lt;/p&gt;
+&lt;h2&gt;安裝&lt;/h2&gt;
+&lt;p&gt;參閱官方&lt;a href="http://docs.sencha.com/extjs/6.0/getting_started/welcome_to_extjs.html"&gt;文件&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;下載試用版 : Download and Install Sencha Cmd 6&lt;/li&gt;
+&lt;li&gt;下載SDK : Download and unzip the Ext JS SDK&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;使用 Sencha Cmd 建立 Ext JS 6 應用程式&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;打開console window (小魯的是 Win10)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.sencha.com/cmd/6.x/extjs/cmd_app.html"&gt;操作手冊&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sencha -sdk /path/to/ext6 generate app MyApp /path/to/my-app
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;進行開發&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /path/to/my-app
+sencha app watch
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;瀏覽&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;http://localhost:1841/&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt="Imgur" src="http://i.imgur.com/VEUK0K7.png?1" /&gt;&lt;/p&gt;
+&lt;h2&gt;建構一個登入系統&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://docs.sencha.com/extjs/6.0/getting_started/login_app.html#Step_1___Generate_your_Application"&gt;範例&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imgur" src="http://i.imgur.com/BcVGxk8.png?1" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Imgur" src="http://i.imgur.com/8Crue8E.png?1" /&gt;&lt;/p&gt;</summary></entry></feed>

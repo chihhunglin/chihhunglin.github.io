@@ -66,6 +66,9 @@ Blog            </a>
                         <li >
                             <a href="http://chihhunglin.github.io/category/python.html">Python</a>
                         </li>
+                        <li >
+                            <a href="http://chihhunglin.github.io/category/web.html">Web</a>
+                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="http://chihhunglin.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
@@ -96,7 +99,7 @@ Blog            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-01-27T17:30:00+08:00"> 二 27 1月 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-01-27T17:30:00+08:00"> Tue 27 January 2015</time>
     </span>
 
 
@@ -108,7 +111,7 @@ Blog            </a>
                 </div>
                 <h1>Vagrant</h1>
 <h2><a href="http://www.codedata.com.tw/social-coding/vagrant-tutorial-2-playing-vm-with-vagrant/">虛擬機</a></h2>
-<div class="highlight"><pre><span></span>mkdir demo-1
+<div class="highlight"><pre>mkdir demo-1
 cd demo-1
 vagrant init ubuntu/trusty64
 vagrant up
@@ -116,23 +119,23 @@ vagrant up
 
 
 <h2>登入Ubuntu</h2>
-<div class="highlight"><pre><span></span>vagrant ssh
+<div class="highlight"><pre>vagrant ssh
 </pre></div>
 
 
 <h2>登出</h2>
-<div class="highlight"><pre><span></span>vagrant$  exit
+<div class="highlight"><pre>vagrant$  exit
 </pre></div>
 
 
 <h2>關機</h2>
-<div class="highlight"><pre><span></span>vagrant halt
+<div class="highlight"><pre>vagrant halt
 </pre></div>
 
 
 <h1>Ansible</h1>
 <h2>安裝<a href="http://docs.ansible.com/intro_installation.html#latest-releases-via-apt-ubuntu">Ansible</a></h2>
-<div class="highlight"><pre><span></span>$ sudo apt-get install software-properties-common
+<div class="highlight"><pre>$ sudo apt-get install software-properties-common
 $ sudo apt-add-repository ppa:ansible/ansible
 $ sudo apt-get update
 $ sudo apt-get install ansible
@@ -141,12 +144,12 @@ $ sudo apt-get install ansible
 
 <h2>配置<a href="http://askubuntu.com/questions/46424/adding-ssh-keys-to-authorized-keys">authorized_keys</a></h2>
 <h3>產生key</h3>
-<div class="highlight"><pre><span></span>$ ssh-keygen -t rsa
+<div class="highlight"><pre>$ ssh-keygen -t rsa
 </pre></div>
 
 
 <h3>配置遠端public key</h3>
-<div class="highlight"><pre><span></span>$ cat ~/.ssh/id_rsa.pub <span class="p">|</span> ssh USER@HOST <span class="s2">&quot;mkdir -p ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys&quot;</span>
+<div class="highlight"><pre>$ cat ~/.ssh/id_rsa.pub <span class="p">|</span> ssh USER@HOST <span class="s2">&quot;mkdir -p ~/.ssh &amp;&amp; cat &gt;&gt; ~/.ssh/authorized_keys&quot;</span>
 </pre></div>
 
 
@@ -155,36 +158,36 @@ $ sudo apt-get install ansible
 <blockquote>
 <p>hosts  </p>
 </blockquote>
-<div class="highlight"><pre><span></span>[test]          
+<div class="highlight"><pre>[test]          
 127.0.0.1
 </pre></div>
 
 
 <h3>ping module</h3>
-<div class="highlight"><pre><span></span>$ ansible -m ping -i hosts -u vagrant <span class="nb">test</span>
+<div class="highlight"><pre>$ ansible -m ping -i hosts -u vagrant <span class="nb">test</span>
 </pre></div>
 
 
 <h2><a href="http://www.codedata.com.tw/social-coding/ansible-github/">利用 Ansible 部署 GitHub 專案的設定細節</a></h2>
 <h3>clone 範例</h3>
-<div class="highlight"><pre><span></span>$ git clone https://github.com/William-Yeh/ansible-git-deploy-demo.git
+<div class="highlight"><pre>$ git clone https://github.com/William-Yeh/ansible-git-deploy-demo.git
 </pre></div>
 
 
 <h3>下載 roles</h3>
-<div class="highlight"><pre><span></span>$ <span class="nb">cd</span> ansible-git-deploy-demo/public-repo
+<div class="highlight"><pre>$ <span class="nb">cd</span> ansible-git-deploy-demo/public-repo
 $ ansible-galaxy install -f  -r requirements.yml
 </pre></div>
 
 
 <h3>執行劇本</h3>
 <h4>編輯hosts</h4>
-<div class="highlight"><pre><span></span>$ ansible-playbook -i hosts -u vagrant playbook.yml
+<div class="highlight"><pre>$ ansible-playbook -i hosts -u vagrant playbook.yml
 </pre></div>
 
 
 <h3>確認安裝成功</h3>
-<div class="highlight"><pre><span></span>wrk --help
+<div class="highlight"><pre>wrk --help
 </pre></div>
             </div>
             <!-- /.entry-content -->

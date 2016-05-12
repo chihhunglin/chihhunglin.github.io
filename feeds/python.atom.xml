@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Blog</title><link href="http://chihhunglin.github.io/" rel="alternate"></link><link href="http://chihhunglin.github.io/feeds/python.atom.xml" rel="self"></link><id>http://chihhunglin.github.io/</id><updated>2016-05-04T14:30:00+08:00</updated><entry><title>從 javascript 看 python</title><link href="http://chihhunglin.github.io/cong-javascript-kan-python.html" rel="alternate"></link><published>2016-05-04T14:30:00+08:00</published><author><name>Peter Lin</name></author><id>tag:chihhunglin.github.io,2016-05-04:cong-javascript-kan-python.html</id><summary type="html">&lt;p&gt;學習 &lt;a href="https://www.python.org/"&gt;Python&lt;/a&gt; 筆記，紀錄與 javascript 語法特別的地方．(不完整版)&lt;/p&gt;
 &lt;h2&gt;The range() Function&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Mary&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;had&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;a&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;little&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;lamb&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Mary&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;had&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;a&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;little&amp;#39;&lt;/span&gt;, &lt;span class="s1"&gt;&amp;#39;lamb&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
 &amp;gt;&amp;gt;&amp;gt; &lt;span class="k"&gt;for&lt;/span&gt; i in range&lt;span class="o"&gt;(&lt;/span&gt;len&lt;span class="o"&gt;(&lt;/span&gt;a&lt;span class="o"&gt;))&lt;/span&gt;:
 ...     print i, a&lt;span class="o"&gt;[&lt;/span&gt;i&lt;span class="o"&gt;]&lt;/span&gt;
 ...
@@ -14,7 +14,7 @@
 
 
 &lt;h2&gt;break and continue Statements, and else Clauses on Loops&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class="k"&gt;for&lt;/span&gt; n in range&lt;span class="o"&gt;(&lt;/span&gt;2, 10&lt;span class="o"&gt;)&lt;/span&gt;:
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class="k"&gt;for&lt;/span&gt; n in range&lt;span class="o"&gt;(&lt;/span&gt;2, 10&lt;span class="o"&gt;)&lt;/span&gt;:
 ...     &lt;span class="k"&gt;for&lt;/span&gt; x in range&lt;span class="o"&gt;(&lt;/span&gt;2, n&lt;span class="o"&gt;)&lt;/span&gt;:
 ...         &lt;span class="k"&gt;if&lt;/span&gt; n % &lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; 0:
 ...             print n, &lt;span class="s1"&gt;&amp;#39;equals&amp;#39;&lt;/span&gt;, x, &lt;span class="s1"&gt;&amp;#39;*&amp;#39;&lt;/span&gt;, n/x
@@ -34,7 +34,7 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class="k"&gt;for&lt;/span&gt; num in range&lt;span class="o"&gt;(&lt;/span&gt;2, 10&lt;span class="o"&gt;)&lt;/span&gt;:
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class="k"&gt;for&lt;/span&gt; num in range&lt;span class="o"&gt;(&lt;/span&gt;2, 10&lt;span class="o"&gt;)&lt;/span&gt;:
 ...     &lt;span class="k"&gt;if&lt;/span&gt; num % &lt;span class="nv"&gt;2&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; 0:
 ...         print &lt;span class="s2"&gt;&amp;quot;Found an even number&amp;quot;&lt;/span&gt;, num
 ...         &lt;span class="k"&gt;continue&lt;/span&gt;
@@ -51,26 +51,26 @@ Found a number 9
 
 
 &lt;h2&gt;pass Statements&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class="k"&gt;while&lt;/span&gt; True:
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class="k"&gt;while&lt;/span&gt; True:
 ...     pass  &lt;span class="c1"&gt;# Busy-wait for keyboard interrupt (Ctrl+C)&lt;/span&gt;
 ...
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt;&amp;gt; class MyEmptyClass:
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; class MyEmptyClass:
 ...     pass
 ...
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt;&amp;gt; def initlog&lt;span class="o"&gt;(&lt;/span&gt;*args&lt;span class="o"&gt;)&lt;/span&gt;:
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; def initlog&lt;span class="o"&gt;(&lt;/span&gt;*args&lt;span class="o"&gt;)&lt;/span&gt;:
 ...     pass   &lt;span class="c1"&gt;# Remember to implement this!&lt;/span&gt;
 ...
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h2&gt;The default value is evaluated only once.&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;def f&lt;span class="o"&gt;(&lt;/span&gt;a, &lt;span class="nv"&gt;L&lt;/span&gt;&lt;span class="o"&gt;=[])&lt;/span&gt;:
+&lt;div class="highlight"&gt;&lt;pre&gt;def f&lt;span class="o"&gt;(&lt;/span&gt;a, &lt;span class="nv"&gt;L&lt;/span&gt;&lt;span class="o"&gt;=[])&lt;/span&gt;:
     L.append&lt;span class="o"&gt;(&lt;/span&gt;a&lt;span class="o"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; L
 
@@ -80,7 +80,7 @@ print f&lt;span class="o"&gt;(&lt;/span&gt;3&lt;span class="o"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;def f&lt;span class="o"&gt;(&lt;/span&gt;a, &lt;span class="nv"&gt;L&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;None&lt;span class="o"&gt;)&lt;/span&gt;:
+&lt;div class="highlight"&gt;&lt;pre&gt;def f&lt;span class="o"&gt;(&lt;/span&gt;a, &lt;span class="nv"&gt;L&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;None&lt;span class="o"&gt;)&lt;/span&gt;:
     &lt;span class="k"&gt;if&lt;/span&gt; L is None:
         &lt;span class="nv"&gt;L&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[]&lt;/span&gt;
     L.append&lt;span class="o"&gt;(&lt;/span&gt;a&lt;span class="o"&gt;)&lt;/span&gt;
@@ -89,7 +89,7 @@ print f&lt;span class="o"&gt;(&lt;/span&gt;3&lt;span class="o"&gt;)&lt;/span&gt;
 
 
 &lt;h2&gt;Keyword Arguments&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;def cheeseshop&lt;span class="o"&gt;(&lt;/span&gt;kind, *arguments, **keywords&lt;span class="o"&gt;)&lt;/span&gt;:
+&lt;div class="highlight"&gt;&lt;pre&gt;def cheeseshop&lt;span class="o"&gt;(&lt;/span&gt;kind, *arguments, **keywords&lt;span class="o"&gt;)&lt;/span&gt;:
     print &lt;span class="s2"&gt;&amp;quot;-- Do you have any&amp;quot;&lt;/span&gt;, kind, &lt;span class="s2"&gt;&amp;quot;?&amp;quot;&lt;/span&gt;
     print &lt;span class="s2"&gt;&amp;quot;-- I&amp;#39;m sorry, we&amp;#39;re all out of&amp;quot;&lt;/span&gt;, kind
     &lt;span class="k"&gt;for&lt;/span&gt; arg in arguments:
@@ -102,7 +102,7 @@ print f&lt;span class="o"&gt;(&lt;/span&gt;3&lt;span class="o"&gt;)&lt;/span&gt;
 
 
 &lt;h2&gt;Lambda Expressions&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;gt;&amp;gt;&amp;gt; def make_incrementor&lt;span class="o"&gt;(&lt;/span&gt;n&lt;span class="o"&gt;)&lt;/span&gt;:
+&lt;div class="highlight"&gt;&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; def make_incrementor&lt;span class="o"&gt;(&lt;/span&gt;n&lt;span class="o"&gt;)&lt;/span&gt;:
 ...     &lt;span class="k"&gt;return&lt;/span&gt; lambda x: x + n
 ...
 &amp;gt;&amp;gt;&amp;gt; &lt;span class="nv"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; make_incrementor&lt;span class="o"&gt;(&lt;/span&gt;42&lt;span class="o"&gt;)&lt;/span&gt;
@@ -146,23 +146,23 @@ print f&lt;span class="o"&gt;(&lt;/span&gt;3&lt;span class="o"&gt;)&lt;/span&gt;
 &lt;p&gt;複製pydev到遠端機器&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;find /Applications/eclipse/plugins -name &lt;span class="s1"&gt;&amp;#39;org.python.pydev_*&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;find /Applications/eclipse/plugins -name &lt;span class="s1"&gt;&amp;#39;org.python.pydev_*&amp;#39;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;e.g. /Applications/eclipse/plugins/org.python.pydev_2.8.2.2013090511&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    將檔案放置到正確路徑
+&lt;div class="highlight"&gt;&lt;pre&gt;    將檔案放置到正確路徑
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python -c &lt;span class="s2"&gt;&amp;quot;import sys&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;python -c &lt;span class="s2"&gt;&amp;quot;import sys&lt;/span&gt;
 &lt;span class="s2"&gt;from pprint import pprint as pp&lt;/span&gt;
 &lt;span class="s2"&gt;pp(sys.path)&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;e.g. /usr/local/lib/python2.7/dist-packages&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh vagrant@example.dev mkdir pysrc
+&lt;div class="highlight"&gt;&lt;pre&gt;ssh vagrant@example.dev mkdir pysrc
 scp -r /Applications/eclipse/plugins/org.python.pydev_2.8.2.2013090511/pysrc/* vagrant@example.dev:pysrc
 ssh vagrant@example.dev &lt;span class="s1"&gt;&amp;#39;sudo cp -R pysrc/* /usr/local/lib/python2.7/dist-packages/&amp;#39;&lt;/span&gt;
 ssh vagrant@example.dev rm -r pysrc
@@ -173,7 +173,7 @@ ssh vagrant@example.dev rm -r pysrc
 &lt;li&gt;設定路徑對照
 在 ubuntu 編輯 /usr/local/lib/python2.7/dist-packages/pydevd_file_utils.py&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;PATHS_FROM_ECLIPSE_TO_PYTHON&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;PATHS_FROM_ECLIPSE_TO_PYTHON&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;
         &lt;span class="o"&gt;(&lt;/span&gt;r&lt;span class="s1"&gt;&amp;#39;C:\Gitlab\xxx\rrr&amp;#39;&lt;/span&gt;, r&lt;span class="s1"&gt;&amp;#39;/home/vagrant/xxx/rrr&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
 &lt;span class="o"&gt;]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -185,7 +185,7 @@ ssh vagrant@example.dev rm -r pysrc
 當 py 執行到 settrace 會中斷去連結到 eclipse 的 debug server。 譬如寫在 run.py。
 在 ubuntu 執行 &lt;strong&gt;netstat -rn&lt;/strong&gt; 可以知道 default gw 就是 Host(eclipse) 的IP。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# append path&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# append path&lt;/span&gt;
 &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;r&amp;#39;/usr/local/lib/python2.7/dist-packages&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pydevd&lt;/span&gt;
 &lt;span class="c1"&gt;# breakpoint&lt;/span&gt;

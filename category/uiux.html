@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Github - Blog</title>
+    <title>UI/UX - Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link href="http://chihhunglin.github.io/images/favicon.jpg" rel="icon">
+    <link href="/images/favicon.jpg" rel="icon">
 
 
     <meta name="author" content="Peter Lin" />
-    <meta name="keywords" content="Github" />
+    <meta name="keywords" content="UI/UX" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="Blog" />
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Blog"/>
-        <meta property="og:url" content="http://chihhunglin.github.io"/>
+        <meta property="og:url" content=""/>
         <meta property="og:description" content="Blog"/>
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="http://chihhunglin.github.io/theme/css/bootstrap.min.css" type="text/css"/>
-    <link href="http://chihhunglin.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="http://chihhunglin.github.io/theme/css/pygments/native.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://chihhunglin.github.io/theme/css/style.css" type="text/css"/>
-
-        <link href="http://chihhunglin.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
-              title="Blog ATOM Feed"/>
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
 
 
 
-        <link href="http://chihhunglin.github.io/feeds/github.atom.xml" type="application/atom+xml" rel="alternate"
-              title="Blog Github ATOM Feed"/>
+
 
 </head>
 <body>
@@ -49,26 +45,26 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://chihhunglin.github.io/" class="navbar-brand">
+            <a href="/" class="navbar-brand">
 Blog            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                         <li >
-                            <a href="http://chihhunglin.github.io/category/devops.html">Devops</a>
+                            <a href="/category/devops.html">Devops</a>
+                        </li>
+                        <li >
+                            <a href="/category/github.html">Github</a>
+                        </li>
+                        <li >
+                            <a href="/category/python.html">Python</a>
                         </li>
                         <li class="active">
-                            <a href="http://chihhunglin.github.io/category/github.html">Github</a>
-                        </li>
-                        <li >
-                            <a href="http://chihhunglin.github.io/category/python.html">Python</a>
-                        </li>
-                        <li >
-                            <a href="http://chihhunglin.github.io/category/web.html">Web</a>
+                            <a href="/category/uiux.html">Ui/ux</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="http://chihhunglin.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+              <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -80,68 +76,24 @@ Blog            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
-                <h2><a href="http://chihhunglin.github.io/shi-yong-pelican-chuang-zao-zi-ji-de-github-pages-blog.html">使用 Pelican 創造自己的 Github Pages blog</a></h2>
-                <div class="summary"><p><a href="http://docs.getpelican.com/en/3.6.3/">Pelican</a> 用 python 寫成的靜態網頁產生工具．</p>
-<h1>設定 github.io 網頁</h1>
+                <h2><a href="/ce-shi-extjs.html">測試 Extjs</a></h2>
+                <div class="summary"><p>學習 <a href="https://www.sencha.com/">Ext JS</a> 筆記．(不完整版)</p>
+<h2>安裝</h2>
+<p>參閱官方<a href="http://docs.sencha.com/extjs/6.0/getting_started/welcome_to_extjs.html">文件</a>
+<em> 下載試用版 : Download and Install Sencha Cmd 6
+</em> 下載SDK : Download and unzip the Ext JS SDK</p>
+<h2>使用 Sencha Cmd 建立 Ext JS 6 應用程式</h2>
 <ul>
-<li>建立兩個容器 <ul>
-<li>取得 <strong>GitHub</strong> 帳號</li>
-<li>建立 <strong>repository</strong> ，命名規則 username.github.io-src and username.github.io(初始化加入README)</li>
+<li>打開console window (小魯的是 Win10)</li>
+<li><a href="https://docs.sencha.com/cmd/6.x/extjs/cmd_app.html">操作手冊</a></li>
 </ul>
-</li>
-</ul>
-<h1>安裝 Pelican</h1>
-<div class="highlight"><pre>pip install pelican markdown
-git clone https://github.com/username/username.github.io-src ghpages
-<span class="nb">cd</span> ghpages
+<div class="highlight"><pre>sencha -sdk /path/to/ext6 generate app MyApp /path/to/my-app
 </pre></div>
 
 
-<h1>使用 Pelican 設定 Blog</h1>
-<div class="highlight"><pre>git remote -v
-git submodule ...</pre></div>
-                    <a class="btn btn-default btn-xs" href="http://chihhunglin.github.io/shi-yong-pelican-chuang-zao-zi-ji-de-github-pages-blog.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="http://chihhunglin.github.io/ru-he-yong-you-zi-ji-de-github-wang-zhan.html">如何擁有自己的 GitHub 網站</a></h2>
-                <div class="summary"><h1>步驟</h1>
-<ol>
-<li>建立容器 <ul>
-<li>取得<strong>GitHub</strong>帳號</li>
-<li>建立<strong>repository</strong>，命名規則 username.github.io</li>
-</ul>
-</li>
-<li>複製容器</li>
-</ol>
-<div class="highlight"><pre>git clone https://github.com/username/username.github.io
-</pre></div>
-
-
-<ol>
-<li>世界您好</li>
-</ol>
-<div class="highlight"><pre><span class="nb">cd</span> username.github.io
-<span class="nb">echo</span> <span class="s2">&quot;Hello World&quot;</span> &gt; index.html
-</pre></div>
-
-
-<ol>
-<li>上傳</li>
-</ol>
-<div class="highlight"><pre>git add --all
-git commit -m <span class="s2">&quot;Initial commit&quot;</span>
-git push
-</pre></div>
-
-
-<p><strong>記得輸入帳號密碼</strong></p>
-<h1>參考</h1>
-<ul>
-<li><a href="https://pages.github.com/">GiHub Pages</a></li>
-</ul>
-                    <a class="btn btn-default btn-xs" href="http://chihhunglin.github.io/ru-he-yong-you-zi-ji-de-github-wang-zhan.html">more ...</a>
+<h3>進行開發</h3>
+<div class="highlight"><pre><span class="nb">cd</span> /path ...</pre></div>
+                    <a class="btn btn-default btn-xs" href="/ce-shi-extjs.html">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -206,15 +158,15 @@ git push
       </div>
    </div>
 </footer>
-<script src="http://chihhunglin.github.io/theme/js/jquery.min.js"></script>
+<script src="/theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="http://chihhunglin.github.io/theme/js/bootstrap.min.js"></script>
+<script src="/theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="http://chihhunglin.github.io/theme/js/respond.min.js"></script>
+<script src="/theme/js/respond.min.js"></script>
 
-    <script src="http://chihhunglin.github.io/theme/js/bodypadding.js"></script>
+    <script src="/theme/js/bodypadding.js"></script>
 
 </body>
 </html>
