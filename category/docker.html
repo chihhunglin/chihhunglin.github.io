@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>使用 Packer 建立 Windows VM box - Blog</title>
+    <title>Docker - Blog</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,19 +10,16 @@
 
     <link href="/images/favicon.jpg" rel="icon">
 
-<link rel="canonical" href="/shi-yong-packer-jian-li-windows-vm-box.html">
 
-        <meta name="author" content="Peter Lin" />
-        <meta name="description" content="學習 Packer 筆記．(不完整版) 安裝 參閱官方文件 實作 Windows Setup a local Windows 2016 TP5 Docker VM Run Packer Packer version : 0.10.0 Virtualbox version : 5.0.20 Vagrant : 1.8.1 git clone https://github.com/StefanScherer/packer-windows cd packer-windows packer build --only=virtualbox-iso windows_2016_docker.json key 參考 ..." />
+    <meta name="author" content="Peter Lin" />
+    <meta name="keywords" content="Docker" />
 
+    <!-- Open Graph tags -->
         <meta property="og:site_name" content="Blog" />
-        <meta property="og:type" content="article"/>
-        <meta property="og:title" content="使用 Packer 建立 Windows VM box"/>
-        <meta property="og:url" content="/shi-yong-packer-jian-li-windows-vm-box.html"/>
-        <meta property="og:description" content="學習 Packer 筆記．(不完整版) 安裝 參閱官方文件 實作 Windows Setup a local Windows 2016 TP5 Docker VM Run Packer Packer version : 0.10.0 Virtualbox version : 5.0.20 Vagrant : 1.8.1 git clone https://github.com/StefanScherer/packer-windows cd packer-windows packer build --only=virtualbox-iso windows_2016_docker.json key 參考 ..."/>
-        <meta property="article:published_time" content="2016-05-06" />
-            <meta property="article:section" content="DevOps" />
-            <meta property="article:author" content="Peter Lin" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Blog"/>
+        <meta property="og:url" content=""/>
+        <meta property="og:description" content="Blog"/>
 
 
     <!-- Bootstrap -->
@@ -53,10 +50,10 @@ Blog            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                        <li class="active">
+                        <li >
                             <a href="/category/devops.html">Devops</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="/category/docker.html">Docker</a>
                         </li>
                         <li >
@@ -81,62 +78,15 @@ Blog            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-    <section id="content">
-        <article>
-            <header class="page-header">
-                <h1>
-                    <a href="/shi-yong-packer-jian-li-windows-vm-box.html"
-                       rel="bookmark"
-                       title="Permalink to 使用 Packer 建立 Windows VM box">
-                        使用 Packer 建立 Windows VM box
-                    </a>
-                </h1>
-            </header>
-            <div class="entry-content">
-                <div class="panel">
-                    <div class="panel-body">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2016-05-06T17:30:00+08:00"> Fri 06 May 2016</time>
-    </span>
-
-
-
-
-
-    
-</footer><!-- /.post-info -->                    </div>
+            <article>
+                <h2><a href="/ce-shi-docker-kai-fa-aspnet.html">測試 Docker 開發 ASP.NET</a></h2>
+                <div class="summary"><p>使用 Docker 開發 ASP.NET，參閱 <a href="https://github.com/docker/labs/blob/master/windows/dotnet-core/index.md">Quickstart .NET Core</a></p>
+<p><img alt="Imgur" src="http://i.imgur.com/Q7CdLSe.png?1" /></p>
+<p><img alt="Imgur" src="http://i.imgur.com/iKl047R.png?1" /></p>
+                    <a class="btn btn-default btn-xs" href="/ce-shi-docker-kai-fa-aspnet.html">more ...</a>
                 </div>
-                <p>學習 <a href="https://www.packer.io/">Packer</a> 筆記．(不完整版)</p>
-<h2>安裝</h2>
-<p>參閱官方<a href="https://www.packer.io/docs/installation.html">文件</a></p>
-<h2>實作 Windows</h2>
-<p><a href="https://stefanscherer.github.io/setup-local-windows-2016-tp5-docker-vm/">Setup a local Windows 2016 TP5 Docker VM</a></p>
-<h2>Run Packer</h2>
-<ul>
-<li>Packer version : 0.10.0</li>
-<li>Virtualbox version : 5.0.20</li>
-<li>Vagrant : 1.8.1</li>
-</ul>
-<div class="highlight"><pre>git clone https://github.com/StefanScherer/packer-windows  
-<span class="nb">cd</span> packer-windows 
-
-packer build --only<span class="o">=</span>virtualbox-iso windows_2016_docker.json  
-</pre></div>
-
-
-<ul>
-<li><a href="https://blogs.technet.microsoft.com/ausoemteam/2016/04/28/windows-server-2016-technical-preview-5-available-for-download/">key</a></li>
-</ul>
-<h1>參考</h1>
-<ul>
-<li><a href="https://github.com/seterrychen/packer-vagrant-vbox">Using Packer to package Vagrant box(driver: Virtualbox) by Docker</a></li>
-</ul>
-            </div>
-            <!-- /.entry-content -->
-        </article>
-    </section>
+            </article>
+            <hr/>
 
         </div>
         <div class="col-sm-3" id="sidebar">
