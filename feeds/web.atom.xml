@@ -11,12 +11,12 @@
 &lt;li&gt;打開console window (小魯的是 Win10)&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://docs.sencha.com/cmd/6.x/extjs/cmd_app.html"&gt;操作手冊&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sencha -sdk /path/to/ext6 generate app MyApp /path/to/my-app
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sencha -sdk /path/to/ext6 generate app MyApp /path/to/my-app
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h3&gt;進行開發&lt;/h3&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /path/to/my-app
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /path/to/my-app
 sencha app watch
 &lt;/pre&gt;&lt;/div&gt;
 
