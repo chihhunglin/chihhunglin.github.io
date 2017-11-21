@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-21T11:03:32+08:00</updated><id>http://localhost:4000/</id><title type="html">ThreeD</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2017/11/20/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-11-20T18:03:06+08:00</published><updated>2017-11-20T18:03:06+08:00</updated><id>http://localhost:4000/jekyll/update/2017/11/20/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/11/20/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">測試 Docker 開發 ASP.NET</title><link href="http://localhost:4000/docker/2016/05/13/learn-asp-in-docker.html" rel="alternate" type="text/html" title="測試 Docker 開發 ASP.NET" /><published>2016-05-13T11:30:00+08:00</published><updated>2016-05-13T11:30:00+08:00</updated><id>http://localhost:4000/docker/2016/05/13/learn-asp-in-docker</id><content type="html" xml:base="http://localhost:4000/docker/2016/05/13/learn-asp-in-docker.html">&lt;p&gt;使用 Docker 開發 ASP.NET，參閱 &lt;a href=&quot;https://github.com/docker/labs/blob/master/windows/dotnet-core/index.md&quot;&gt;Quickstart .NET Core&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Q7CdLSe.png?1&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/iKl047R.png?1&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">使用 Docker 開發 ASP.NET，參閱 Quickstart .NET Core</summary></entry><entry><title type="html">測試 Extjs</title><link href="http://localhost:4000/frontend/2016/05/12/learn-extjs.html" rel="alternate" type="text/html" title="測試 Extjs" /><published>2016-05-12T14:30:00+08:00</published><updated>2016-05-12T14:30:00+08:00</updated><id>http://localhost:4000/frontend/2016/05/12/learn-extjs</id><content type="html" xml:base="http://localhost:4000/frontend/2016/05/12/learn-extjs.html">&lt;p&gt;學習 &lt;a href=&quot;https://www.sencha.com/&quot;&gt;Ext JS&lt;/a&gt; 筆記．&lt;/p&gt;
+
+&lt;h2 id=&quot;安裝&quot;&gt;安裝&lt;/h2&gt;
+&lt;p&gt;參閱官方&lt;a href=&quot;http://docs.sencha.com/extjs/6.0/getting_started/welcome_to_extjs.html&quot;&gt;文件&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;下載試用版 : Download and Install Sencha Cmd 6&lt;/li&gt;
+  &lt;li&gt;下載SDK : Download and unzip the Ext JS SDK&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;使用-sencha-cmd-建立-ext-js-6-應用程式&quot;&gt;使用 Sencha Cmd 建立 Ext JS 6 應用程式&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;打開console window (小魯的是 Win10)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.sencha.com/cmd/6.x/extjs/cmd_app.html&quot;&gt;操作手冊&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sencha &lt;span class=&quot;nt&quot;&gt;-sdk&lt;/span&gt; /path/to/ext6 generate app MyApp /path/to/my-app
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;進行開發&quot;&gt;進行開發&lt;/h3&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /path/to/my-app
+sencha app watch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;瀏覽&quot;&gt;瀏覽&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;http://localhost:1841/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/VEUK0K7.png?1&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;建構一個登入系統&quot;&gt;建構一個登入系統&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.sencha.com/extjs/6.0/getting_started/login_app.html#Step_1___Generate_your_Application&quot;&gt;範例&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/BcVGxk8.png?1&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/8Crue8E.png?1&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">學習 Ext JS 筆記．</summary></entry><entry><title type="html">使用 Packer 建立 Windows VM box</title><link href="http://localhost:4000/devops/2016/05/06/learn-packer-to-build-windows-vm.html" rel="alternate" type="text/html" title="使用 Packer 建立 Windows VM box" /><published>2016-05-06T17:30:00+08:00</published><updated>2016-05-06T17:30:00+08:00</updated><id>http://localhost:4000/devops/2016/05/06/learn-packer-to-build-windows-vm</id><content type="html" xml:base="http://localhost:4000/devops/2016/05/06/learn-packer-to-build-windows-vm.html">&lt;p&gt;學習 &lt;a href=&quot;https://www.packer.io/&quot;&gt;Packer&lt;/a&gt; 筆記．(不完整版)&lt;/p&gt;
+
+&lt;h2 id=&quot;安裝&quot;&gt;安裝&lt;/h2&gt;
+&lt;p&gt;參閱官方&lt;a href=&quot;https://www.packer.io/docs/installation.html&quot;&gt;文件&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;實作-windows&quot;&gt;實作 Windows&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://stefanscherer.github.io/setup-local-windows-2016-tp5-docker-vm/&quot;&gt;Setup a local Windows 2016 TP5 Docker VM&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;run-packer&quot;&gt;Run Packer&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Packer version : 0.10.0&lt;/li&gt;
+  &lt;li&gt;Virtualbox version : 5.0.20&lt;/li&gt;
+  &lt;li&gt;Vagrant : 1.8.1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/StefanScherer/packer-windows
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;packer-windows
+
+packer build &lt;span class=&quot;nt&quot;&gt;--only&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;virtualbox-iso windows_2016_docker.json
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blogs.technet.microsoft.com/ausoemteam/2016/04/28/windows-server-2016-technical-preview-5-available-for-download/&quot;&gt;key&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;參考&quot;&gt;參考&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/seterrychen/packer-vagrant-vbox&quot;&gt;Using Packer to package Vagrant box(driver: Virtualbox) by Docker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">學習 Packer 筆記．(不完整版)</summary></entry><entry><title type="html">從 javascript 看 python</title><link href="http://localhost:4000/python/2016/05/04/learn-python-from-javascript.html" rel="alternate" type="text/html" title="從 javascript 看 python" /><published>2016-05-04T14:30:00+08:00</published><updated>2016-05-04T14:30:00+08:00</updated><id>http://localhost:4000/python/2016/05/04/learn-python-from-javascript</id><content type="html" xml:base="http://localhost:4000/python/2016/05/04/learn-python-from-javascript.html">&lt;p&gt;學習 &lt;a href=&quot;https://www.python.org/&quot;&gt;Python&lt;/a&gt; 筆記，紀錄與 javascript 語法特別的地方．(不完整版)&lt;/p&gt;
+
+&lt;h2 id=&quot;the-range-function&quot;&gt;The range() Function&lt;/h2&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Mary'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'had'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'a'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'little'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'lamb'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;i &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;range&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;len&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;:
+...     print i, a[i]
+...
+0 Mary
+1 had
+2 a
+3 little
+4 lamb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;break-and-continue-statements-and-else-clauses-on-loops&quot;&gt;break and continue Statements, and else Clauses on Loops&lt;/h2&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;n &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;range&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2, 10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
+...     &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;x &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;range&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2, n&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
+...         &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;n % x &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; 0:
+...             print n, &lt;span class=&quot;s1&quot;&gt;'equals'&lt;/span&gt;, x, &lt;span class=&quot;s1&quot;&gt;'*'&lt;/span&gt;, n/x
+...             &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;
+...     &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;:
+...         &lt;span class=&quot;c&quot;&gt;# loop fell through without finding a factor&lt;/span&gt;
+...         print n, &lt;span class=&quot;s1&quot;&gt;'is a prime number'&lt;/span&gt;
+...
+2 is a prime number
+3 is a prime number
+4 equals 2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 2
+5 is a prime number
+6 equals 2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 3
+7 is a prime number
+8 equals 2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 4
+9 equals 3 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;num &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;range&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2, 10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
+...     &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;num % 2 &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; 0:
+...         print &lt;span class=&quot;s2&quot;&gt;&quot;Found an even number&quot;&lt;/span&gt;, num
+...         &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;
+...     print &lt;span class=&quot;s2&quot;&gt;&quot;Found a number&quot;&lt;/span&gt;, num
+Found an even number 2
+Found a number 3
+Found an even number 4
+Found a number 5
+Found an even number 6
+Found a number 7
+Found an even number 8
+Found a number 9
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;pass-statements&quot;&gt;pass Statements&lt;/h2&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;while &lt;/span&gt;True:
+...     pass  &lt;span class=&quot;c&quot;&gt;# Busy-wait for keyboard interrupt (Ctrl+C)&lt;/span&gt;
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; class MyEmptyClass:
+...     pass
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; def initlog&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;args&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
+...     pass   &lt;span class=&quot;c&quot;&gt;# Remember to implement this!&lt;/span&gt;
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;the-default-value-is-evaluated-only-once&quot;&gt;The default value is evaluated only once.&lt;/h2&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def f&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;a, &lt;span class=&quot;nv&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=[])&lt;/span&gt;:
+    L.append&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;L
+
+print f&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+print f&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+print f&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def f&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;a, &lt;span class=&quot;nv&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;None&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
+    &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;L is None:
+        L &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt;
+    L.append&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;L
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;keyword-arguments&quot;&gt;Keyword Arguments&lt;/h2&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def cheeseshop&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kind, &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;arguments, &lt;span class=&quot;k&quot;&gt;**&lt;/span&gt;keywords&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
+    print &lt;span class=&quot;s2&quot;&gt;&quot;-- Do you have any&quot;&lt;/span&gt;, kind, &lt;span class=&quot;s2&quot;&gt;&quot;?&quot;&lt;/span&gt;
+    print &lt;span class=&quot;s2&quot;&gt;&quot;-- I'm sorry, we're all out of&quot;&lt;/span&gt;, kind
+    &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;arg &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;arguments:
+        print arg
+    print &lt;span class=&quot;s2&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 40
+    keys &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; sorted&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;keywords.keys&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;kw &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;keys:
+        print kw, &lt;span class=&quot;s2&quot;&gt;&quot;:&quot;&lt;/span&gt;, keywords[kw]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;lambda-expressions&quot;&gt;Lambda Expressions&lt;/h2&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; def make_incrementor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
+...     &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;lambda x: x + n
+...
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; f &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; make_incrementor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;42&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; f&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+42
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; f&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+43
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">學習 Python 筆記，紀錄與 javascript 語法特別的地方．(不完整版)</summary></entry><entry><title type="html">使用 Pelican 創造自己的 Github Pages blog</title><link href="http://localhost:4000/github/2016/04/25/learn-pelican-to-create-ghpage.html" rel="alternate" type="text/html" title="使用 Pelican 創造自己的 Github Pages blog" /><published>2016-04-25T14:30:00+08:00</published><updated>2016-04-25T14:30:00+08:00</updated><id>http://localhost:4000/github/2016/04/25/learn-pelican-to-create-ghpage</id><content type="html" xml:base="http://localhost:4000/github/2016/04/25/learn-pelican-to-create-ghpage.html">&lt;p&gt;[Pelican][2] 用 python 寫成的靜態網頁產生工具．&lt;/p&gt;
+
+&lt;h1 id=&quot;設定-githubio-網頁&quot;&gt;設定 github.io 網頁&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;建立兩個容器
+    &lt;ul&gt;
+      &lt;li&gt;取得 &lt;strong&gt;GitHub&lt;/strong&gt; 帳號&lt;/li&gt;
+      &lt;li&gt;建立 &lt;strong&gt;repository&lt;/strong&gt; ，命名規則 username.github.io-src and username.github.io(初始化加入README)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;安裝-pelican&quot;&gt;安裝 Pelican&lt;/h1&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install pelican markdown
+git clone https://github.com/username/username.github.io-src ghpages
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;ghpages
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;使用-pelican-設定-blog&quot;&gt;使用 Pelican 設定 Blog&lt;/h1&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;
+git submodule add https://github.com/username/username.github.io output
+pelican-quickstart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Where do you want to create your new web site? (hit Enter)&lt;/li&gt;
+  &lt;li&gt;What will be the title of this web site? (ex:Blog)&lt;/li&gt;
+  &lt;li&gt;Who will be the author of this web site? (ex:Peter)&lt;/li&gt;
+  &lt;li&gt;What will be the default language of this web site? [en] (hit Enter)&lt;/li&gt;
+  &lt;li&gt;Do you want to specify a URL prefix? e.g., http://example.com   (Y/n) (Y)&lt;/li&gt;
+  &lt;li&gt;What is your URL prefix? (see above example; no trailing slash) (http://chihhunglin.github.io)&lt;/li&gt;
+  &lt;li&gt;Do you want to enable article pagination? (Y/n) (n)&lt;/li&gt;
+  &lt;li&gt;What is your time zone? [Europe/Paris] (Asia/Taipei)&lt;/li&gt;
+  &lt;li&gt;Do you want to generate a Fabfile/Makefile to automate generation and publishing? (Y/n) (Y)&lt;/li&gt;
+  &lt;li&gt;Do you want an auto-reload &amp;amp; simpleHTTP script to assist with theme and site development? (Y/n) (Y)&lt;/li&gt;
+  &lt;li&gt;Upload mechanisms: choose No for all except Github Pages&lt;/li&gt;
+  &lt;li&gt;Is this your personal page (username.github.io)? (y/N) (Y)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Open the publishconf.py file and set the DELETE_OUTPUT_DIRECTORY variable to False.&lt;/p&gt;
+
+&lt;p&gt;Error: [Errno 17] File exists: ‘/Users/hung/Github/ghpages/output’ (這個錯誤不用理）&lt;/p&gt;
+
+&lt;h1 id=&quot;init-update-submodule-非必要&quot;&gt;Init, update submodule (非必要)&lt;/h1&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git submodule init
+git submodule update
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;build-commit-push-完成&quot;&gt;Build, commit, push, 完成!&lt;/h1&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;make html &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; make serve
+make publish
+
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;output
+git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;First commit.&quot;&lt;/span&gt;
+git push &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin master
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ..
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'*.pyc'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; .gitignore &lt;span class=&quot;c&quot;&gt;#don't need pyc files&lt;/span&gt;
+git add &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;First commit.&quot;&lt;/span&gt;
+git push &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;參考&quot;&gt;參考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[GiHub Pages][1]&lt;/li&gt;
+  &lt;li&gt;[Make a Github Pages blog with Pelican][3]
+[1]:https://pages.github.com/
+[2]:http://docs.getpelican.com/en/3.6.3/
+[3]:https://fedoramagazine.org/make-github-pages-blog-with-pelican/&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Pelican 用 python 寫成的靜態網頁產生工具．</summary></entry><entry><title type="html">Vagrant + Ansible</title><link href="http://localhost:4000/devops/2015/01/27/learn-vagrant-and-ansible.html" rel="alternate" type="text/html" title="Vagrant + Ansible" /><published>2015-01-27T17:30:00+08:00</published><updated>2015-01-27T17:30:00+08:00</updated><id>http://localhost:4000/devops/2015/01/27/learn-vagrant-and-ansible</id><content type="html" xml:base="http://localhost:4000/devops/2015/01/27/learn-vagrant-and-ansible.html">&lt;h1 id=&quot;vagrant&quot;&gt;Vagrant&lt;/h1&gt;
+&lt;h2 id=&quot;虛擬機&quot;&gt;&lt;a href=&quot;http://www.codedata.com.tw/social-coding/vagrant-tutorial-2-playing-vm-with-vagrant/&quot;&gt;虛擬機&lt;/a&gt;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-cmd&quot;&gt;mkdir demo-1
+cd demo-1
+vagrant init ubuntu/trusty64
+vagrant up
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;登入ubuntu&quot;&gt;登入Ubuntu&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-cmd&quot;&gt;vagrant ssh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;登出&quot;&gt;登出&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-cmd&quot;&gt;vagrant$  exit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;關機&quot;&gt;關機&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-cmd&quot;&gt;vagrant halt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;ansible&quot;&gt;Ansible&lt;/h1&gt;
+&lt;h2 id=&quot;安裝ansible&quot;&gt;安裝&lt;a href=&quot;http://docs.ansible.com/intro_installation.html#latest-releases-via-apt-ubuntu&quot;&gt;Ansible&lt;/a&gt;&lt;/h2&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get install software-properties-common
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-add-repository ppa:ansible/ansible
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get update
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get install ansible
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;配置authorized_keys&quot;&gt;配置&lt;a href=&quot;http://askubuntu.com/questions/46424/adding-ssh-keys-to-authorized-keys&quot;&gt;authorized_keys&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;產生key&quot;&gt;產生key&lt;/h3&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ssh-keygen &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;配置遠端public-key&quot;&gt;配置遠端public key&lt;/h3&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; ~/.ssh/id_rsa.pub | ssh USER@HOST &lt;span class=&quot;s2&quot;&gt;&quot;mkdir -p ~/.ssh &amp;amp;&amp;amp; cat &amp;gt;&amp;gt; ~/.ssh/authorized_keys&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;基礎用法&quot;&gt;&lt;a href=&quot;http://www.lemonlatte.tw/tags/Ansible&quot;&gt;基礎用法&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;編輯inventory-file&quot;&gt;編輯inventory file&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;hosts&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[test]
+127.0.0.1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;ping-module&quot;&gt;ping module&lt;/h3&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ansible &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; ping &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; hosts &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; vagrant &lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;利用-ansible-部署-github-專案的設定細節&quot;&gt;&lt;a href=&quot;http://www.codedata.com.tw/social-coding/ansible-github/&quot;&gt;利用 Ansible 部署 GitHub 專案的設定細節&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;clone-範例&quot;&gt;clone 範例&lt;/h3&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone https://github.com/William-Yeh/ansible-git-deploy-demo.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;下載-roles&quot;&gt;下載 roles&lt;/h3&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;ansible-git-deploy-demo/public-repo
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ansible-galaxy install &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; requirements.yml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;執行劇本&quot;&gt;執行劇本&lt;/h3&gt;
+&lt;h4 id=&quot;編輯hosts&quot;&gt;編輯hosts&lt;/h4&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ansible-playbook &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; hosts &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; vagrant playbook.yml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;確認安裝成功&quot;&gt;確認安裝成功&lt;/h3&gt;
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wrk &lt;span class=&quot;nt&quot;&gt;--help&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Vagrant 虛擬機 mkdir demo-1 cd demo-1 vagrant init ubuntu/trusty64 vagrant up 登入Ubuntu vagrant ssh</summary></entry><entry><title type="html">Remote Debugging Python with Eclipse and PyDev</title><link href="http://localhost:4000/python/2014/12/27/learn-remote-debugging-python-with-eclipse-and-pydev.html" rel="alternate" type="text/html" title="Remote Debugging Python with Eclipse and PyDev" /><published>2014-12-27T14:30:00+08:00</published><updated>2014-12-27T14:30:00+08:00</updated><id>http://localhost:4000/python/2014/12/27/learn-remote-debugging-python-with-eclipse-and-pydev</id><content type="html" xml:base="http://localhost:4000/python/2014/12/27/learn-remote-debugging-python-with-eclipse-and-pydev.html">&lt;p&gt;原文請參閱&lt;a href=&quot;http://brianfisher.name/content/remote-debugging-python-eclipse-and-pydev&quot;&gt;Blog&lt;/a&gt;，本文新增自己的實作過程。
+環境介紹&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Local : Win8 + eclipse + PyDev&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Remote : ubuntu + python2.7 in virtualbox&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;安裝&lt;a href=&quot;https://eclipse.org/&quot;&gt;eclipse&lt;/a&gt;
+請先安裝&lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&quot;&gt;Java&lt;/a&gt;，我安裝的是Java 8 跟 eclipse jee luna。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;安裝&lt;a href=&quot;http://pydev.org/manual_101_install.html&quot;&gt;PyDev&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;建立PyDev專案，設定python interpreter(注意要跟遠端執行的同一個minor版本)
+    &lt;ul&gt;
+      &lt;li&gt;安裝&lt;a href=&quot;https://www.python.org/downloads/&quot;&gt;python interpreter&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;在Eclipse 設定 python interpreter，參考 &lt;a href=&quot;http://kodi.wiki/view/HOW-TO:Debug_Python_Scripts_with_Eclipse&quot;&gt;2.3.1 Add Python Interpreter Path &lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;建立專案&lt;/p&gt;
+
+        &lt;blockquote&gt;
+          &lt;p&gt;File -&amp;gt; New -&amp;gt; PyDev Project
+[PyDev Project]dialog
+Project name: 自己打一個
+Project contents: 程式放置目錄
+Interpreter: 選剛才設定Python27
+Finish&lt;/p&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;複製pydev到遠端機器
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find /Applications/eclipse/plugins &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'org.python.pydev_*'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;e.g. /Applications/eclipse/plugins/org.python.pydev_2.8.2.2013090511&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 將檔案放置到正確路徑 ```sh python -c &quot;import sys from pprint import pprint as pp pp(sys.path)&quot; ``` e.g. /usr/local/lib/python2.7/dist-packages ```sh ssh vagrant@example.dev mkdir pysrc scp -r /Applications/eclipse/plugins/org.python.pydev_2.8.2.2013090511/pysrc/* vagrant@example.dev:pysrc ssh vagrant@example.dev 'sudo cp -R pysrc/* /usr/local/lib/python2.7/dist-packages/' ssh vagrant@example.dev rm -r pysrc ```
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;設定路徑對照
+在 ubuntu 編輯 /usr/local/lib/python2.7/dist-packages/pydevd_file_utils.py
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PATHS_FROM_ECLIPSE_TO_PYTHON &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;
+     &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;r&lt;span class=&quot;s1&quot;&gt;'C:\Gitlab\xxx\rrr'&lt;/span&gt;, r&lt;span class=&quot;s1&quot;&gt;'/home/vagrant/xxx/rrr'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;&lt;strong&gt;注意大小寫&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;新增程式
+當 py 執行到 settrace 會中斷去連結到 eclipse 的 debug server。 譬如寫在 run.py。
+在 ubuntu 執行 &lt;strong&gt;netstat -rn&lt;/strong&gt; 可以知道 default gw 就是 Host(eclipse) 的IP。
+    &lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# append path&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r'/usr/local/lib/python2.7/dist-packages'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pydevd&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# breakpoint&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pydevd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;settrace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'10.0.2.2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5678&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stdoutToServer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stderrToServer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;啟動 eclipse debug server
+see &lt;a href=&quot;http://brianfisher.name/content/remote-debugging-python-eclipse-and-pydev&quot;&gt;PyDev | Remote Debugger&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;執行python
+grunt serve&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;#重要
+兩邊的程式碼一定要一樣，斷點才會有效果。&lt;/p&gt;</content><author><name></name></author><summary type="html">原文請參閱Blog，本文新增自己的實作過程。 環境介紹 Local : Win8 + eclipse + PyDev</summary></entry><entry><title type="html">如何擁有自己的 GitHub 網站</title><link href="http://localhost:4000/github/2014/12/09/learn-ghpage.html" rel="alternate" type="text/html" title="如何擁有自己的 GitHub 網站" /><published>2014-12-09T10:21:00+08:00</published><updated>2014-12-09T10:21:00+08:00</updated><id>http://localhost:4000/github/2014/12/09/learn-ghpage</id><content type="html" xml:base="http://localhost:4000/github/2014/12/09/learn-ghpage.html">&lt;h1 id=&quot;步驟&quot;&gt;步驟&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;建立容器
+    &lt;ul&gt;
+      &lt;li&gt;取得&lt;strong&gt;GitHub&lt;/strong&gt;帳號&lt;/li&gt;
+      &lt;li&gt;建立&lt;strong&gt;repository&lt;/strong&gt;，命名規則 username.github.io&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;複製容器
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/username/username.github.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;世界您好
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;username.github.io
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello World&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; index.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;上傳
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
+git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Initial commit&quot;&lt;/span&gt;
+git push
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;&lt;strong&gt;記得輸入帳號密碼&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;參考&quot;&gt;參考&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;[GiHub Pages][1]
+[1]:https://pages.github.com/&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">步驟 建立容器 取得GitHub帳號 建立repository，命名規則 username.github.io 複製容器 git clone https://github.com/username/username.github.io 世界您好 cd username.github.io echo &quot;Hello World&quot; &amp;gt; index.html 上傳 git add --all git commit -m &quot;Initial commit&quot; git push 記得輸入帳號密碼</summary></entry></feed>
