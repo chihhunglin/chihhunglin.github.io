@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-21T11:03:32+08:00</updated><id>http://localhost:4000/</id><title type="html">ThreeD</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2017/11/20/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-11-20T18:03:06+08:00</published><updated>2017-11-20T18:03:06+08:00</updated><id>http://localhost:4000/jekyll/update/2017/11/20/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/11/20/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-22T16:51:04+08:00</updated><id>http://localhost:4000/</id><title type="html">ThreeD</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">darkflow in macOS</title><link href="http://localhost:4000/tensorflow/darknet/deep-learning/object-detection/machine-learning/2017/11/22/machine-learning-yolo.html" rel="alternate" type="text/html" title="darkflow in macOS" /><published>2017-11-22T16:03:06+08:00</published><updated>2017-11-22T16:03:06+08:00</updated><id>http://localhost:4000/tensorflow/darknet/deep-learning/object-detection/machine-learning/2017/11/22/machine-learning-yolo</id><content type="html" xml:base="http://localhost:4000/tensorflow/darknet/deep-learning/object-detection/machine-learning/2017/11/22/machine-learning-yolo.html">&lt;p&gt;&lt;a href=&quot;https://pjreddie.com/darknet/yolo/&quot;&gt;YOLO: Real-Time Object Detection&lt;/a&gt;
+目標是想要可以在macOS上用camera跑demo(沒有nvidia
+GPU)，於是找到&lt;a href=&quot;https://github.com/thtrieu/darkflow&quot;&gt;darkflow&lt;/a&gt;，記錄實作過程如下：&lt;/p&gt;
+
+&lt;p&gt;環境需求：Python3, tensorflow 1.0, numpy, opencv 3.&lt;/p&gt;
+
+&lt;p&gt;Python使用pyenv安裝，用3.6.x會失敗．
+virtualenv用pyenv virtualenv．&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;pyenv install 3.5.4
+pyenv shell 3.5.4
+pyenv virtualenv venv
+pyenv activate venv&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;pip install Cython
+pip install numpy
+pip install opencv-python
+pip install &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; tensorflow
+pip list
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;
+Cython &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0.27.3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+numpy &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1.13.3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+opencv-python &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3.3.0.10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+tensorflow &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1.4.0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;之後的安裝步驟照著darkflow readme，&lt;a href=&quot;https://github.com/thtrieu/darkflow#getting-started&quot;&gt;getting-started&lt;/a&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;git clone https://github.com/thtrieu/darkflow.git
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;darkflow
+pip install &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; .&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;flow &lt;span class=&quot;nt&quot;&gt;--h&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;
+Example usage: flow &lt;span class=&quot;nt&quot;&gt;--imgdir&lt;/span&gt; sample_img/ &lt;span class=&quot;nt&quot;&gt;--model&lt;/span&gt; cfg/yolo.cfg &lt;span class=&quot;nt&quot;&gt;--load&lt;/span&gt; bin/yolo.weights&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;下載weights，從yolo&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;wget https://pjreddie.com/media/files/yolo.weights
+mv yolo.weights bin/.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;可以開始使用，輸出的video會放在同個目錄下。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;flow &lt;span class=&quot;nt&quot;&gt;--model&lt;/span&gt; cfg/yolo.cfg &lt;span class=&quot;nt&quot;&gt;--load&lt;/span&gt; bin/yolo.weights &lt;span class=&quot;nt&quot;&gt;--demo&lt;/span&gt; camera &lt;span class=&quot;nt&quot;&gt;--saveVideo&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><summary type="html">YOLO: Real-Time Object Detection 目標是想要可以在macOS上用camera跑demo(沒有nvidia GPU)，於是找到darkflow，記錄實作過程如下：</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2017/11/20/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-11-20T18:03:06+08:00</published><updated>2017-11-20T18:03:06+08:00</updated><id>http://localhost:4000/jekyll/update/2017/11/20/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/11/20/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
