@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-22T16:51:04+08:00</updated><id>http://localhost:4000/</id><title type="html">ThreeD</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">darkflow in macOS</title><link href="http://localhost:4000/tensorflow/darknet/deep-learning/object-detection/machine-learning/2017/11/22/machine-learning-yolo.html" rel="alternate" type="text/html" title="darkflow in macOS" /><published>2017-11-22T16:03:06+08:00</published><updated>2017-11-22T16:03:06+08:00</updated><id>http://localhost:4000/tensorflow/darknet/deep-learning/object-detection/machine-learning/2017/11/22/machine-learning-yolo</id><content type="html" xml:base="http://localhost:4000/tensorflow/darknet/deep-learning/object-detection/machine-learning/2017/11/22/machine-learning-yolo.html">&lt;p&gt;&lt;a href=&quot;https://pjreddie.com/darknet/yolo/&quot;&gt;YOLO: Real-Time Object Detection&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-12-04T13:13:24+08:00</updated><id>http://localhost:4000/</id><title type="html">ThreeD</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">darkflow in macOS</title><link href="http://localhost:4000/tensorflow/darknet/deep-learning/object-detection/machine-learning/2017/11/22/machine-learning-yolo.html" rel="alternate" type="text/html" title="darkflow in macOS" /><published>2017-11-22T16:03:06+08:00</published><updated>2017-11-22T16:03:06+08:00</updated><id>http://localhost:4000/tensorflow/darknet/deep-learning/object-detection/machine-learning/2017/11/22/machine-learning-yolo</id><content type="html" xml:base="http://localhost:4000/tensorflow/darknet/deep-learning/object-detection/machine-learning/2017/11/22/machine-learning-yolo.html">&lt;p&gt;&lt;a href=&quot;https://pjreddie.com/darknet/yolo/&quot;&gt;YOLO: Real-Time Object Detection&lt;/a&gt;
 目標是想要可以在macOS上用camera跑demo(沒有nvidia
 GPU)，於是找到&lt;a href=&quot;https://github.com/thtrieu/darkflow&quot;&gt;darkflow&lt;/a&gt;，記錄實作過程如下：&lt;/p&gt;
 
@@ -429,34 +429,35 @@ grunt serve&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;#重要
-兩邊的程式碼一定要一樣，斷點才會有效果。&lt;/p&gt;</content><author><name></name></author><summary type="html">原文請參閱Blog，本文新增自己的實作過程。 環境介紹 Local : Win8 + eclipse + PyDev</summary></entry><entry><title type="html">如何擁有自己的 GitHub 網站</title><link href="http://localhost:4000/github/2014/12/09/learn-ghpage.html" rel="alternate" type="text/html" title="如何擁有自己的 GitHub 網站" /><published>2014-12-09T10:21:00+08:00</published><updated>2014-12-09T10:21:00+08:00</updated><id>http://localhost:4000/github/2014/12/09/learn-ghpage</id><content type="html" xml:base="http://localhost:4000/github/2014/12/09/learn-ghpage.html">&lt;h1 id=&quot;步驟&quot;&gt;步驟&lt;/h1&gt;
+兩邊的程式碼一定要一樣，斷點才會有效果。&lt;/p&gt;</content><author><name></name></author><summary type="html">原文請參閱Blog，本文新增自己的實作過程。 環境介紹 Local : Win8 + eclipse + PyDev</summary></entry><entry><title type="html">如何錄製Linux 終端機操作內容</title><link href="http://localhost:4000/linux/2014/12/17/how-to-record-a-linux-terminal-operations.html" rel="alternate" type="text/html" title="如何錄製Linux 終端機操作內容" /><published>2014-12-17T10:11:00+08:00</published><updated>2014-12-17T10:11:00+08:00</updated><id>http://localhost:4000/linux/2014/12/17/how-to-record-a-linux-terminal-operations</id><content type="html" xml:base="http://localhost:4000/linux/2014/12/17/how-to-record-a-linux-terminal-operations.html">&lt;p&gt;Showterm&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;建立容器
-    &lt;ul&gt;
-      &lt;li&gt;取得&lt;strong&gt;GitHub&lt;/strong&gt;帳號&lt;/li&gt;
-      &lt;li&gt;建立&lt;strong&gt;repository&lt;/strong&gt;，命名規則 username.github.io&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;複製容器
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/username/username.github.io
+  &lt;li&gt;免費&lt;/li&gt;
+  &lt;li&gt;方便分享&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;步驟&quot;&gt;步驟&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;安裝Ruby
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get install ruby rubygems
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;世界您好
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;username.github.io
-&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello World&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; index.html
+  &lt;li&gt;安裝showterm
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;gem install showterm
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li&gt;上傳
-    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt;
-git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Initial commit&quot;&lt;/span&gt;
-git push
+  &lt;li&gt;使用 Showterm
+    &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;showterm
+...
+&lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;&lt;strong&gt;記得輸入帳號密碼&lt;/strong&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;h1 id=&quot;測試&quot;&gt;測試&lt;/h1&gt;
+&lt;iframe src=&quot;http://showterm.io/04682d8dbce7dc9863576#fast&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
 &lt;h1 id=&quot;參考&quot;&gt;參考&lt;/h1&gt;
 &lt;ul&gt;
-  &lt;li&gt;[GiHub Pages][1]
-[1]:https://pages.github.com/&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">步驟 建立容器 取得GitHub帳號 建立repository，命名規則 username.github.io 複製容器 git clone https://github.com/username/username.github.io 世界您好 cd username.github.io echo &quot;Hello World&quot; &amp;gt; index.html 上傳 git add --all git commit -m &quot;Initial commit&quot; git push 記得輸入帳號密碼</summary></entry></feed>
+  &lt;li&gt;[CTW][1]
+[1]:http://www.gtwang.org/2013/12/showterm-io-a-terminalshell-recording-upload-and-share-tool-for-linux.html`&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Showterm 免費 方便分享</summary></entry></feed>
