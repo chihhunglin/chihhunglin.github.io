@@ -17,10 +17,17 @@
         .data(matrix)
         .enter().append("tr");
 
-        var td = tr.selectAll("td")
-          .data(function(d) { return d; })
-          .enter().append("td")
-          .text(function(d) { return d; });
+      var td = tr.selectAll("td")
+        .data(function(d) { return d; })
+        .enter().append("td")
+        .text(function(d) { return d; })
+        .style(
+          'color',function(d) {
+            if(d<10000){
+              return 'red'
+            }
+          }
+        );
     }
     if (window.addEventListener) window.addEventListener("load", autorun, false);
     else if (window.attachEvent) window.attachEvent("onload", autorun);
