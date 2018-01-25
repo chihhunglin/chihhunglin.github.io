@@ -1,0 +1,242 @@
+<html>
+  <body>
+    <style>
+      .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 2px;
+      }
+      .axisRed line{
+        stroke: red;
+      }
+      .axisRed path{
+        stroke: red;
+      }
+      .axisRed text{
+        fill: red;
+      }
+      .gridX {
+        fill: black;
+      }
+      .gridX line {
+        stroke: lightgrey;
+        stroke-opacity: 0.7;
+        shape-rendering: crispEdges;
+      }
+      .grid line {
+        stroke: lightgrey;
+        stroke-opacity: 0.7;
+        shape-rendering: crispEdges;
+      }
+      .grid path {
+        stroke-width: 0;
+      }
+      .area {
+        fill: rgba(230, 230, 255, 0.8);
+      }
+    </style>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script type="text/javascript">
+      function autorun() {
+        var svg = d3.select(".post-content").append("svg"),
+          margin = {top: 20, right: 20, bottom: 30, left: 50},
+          width = 960 - margin.left - margin.right,
+          height = 500 - margin.top - margin.bottom,
+          g = svg.attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var parseTime = d3.timeParse("%d-%b-%y");
+
+        var x = d3.scaleTime()
+          .range([0, width]);
+
+        var y = d3.scaleLinear()
+          .range([height, 0]);
+
+        var area = d3.area()
+          .x(function(d) { return x(d.date); })
+          .y0(height)
+          .y1(function(d) { return y(d.close); });
+
+        var valueline = d3.line()
+          .x(function(d) { return x(d.date); })
+          .y(function(d) { return y(d.close); });
+
+        // gridlines in x axis function
+        function make_x_gridlines() {
+          return d3.axisBottom(x)
+            .ticks(5)
+        }
+
+        // gridlines in y axis function
+        function make_y_gridlines() {
+          return d3.axisLeft(y)
+            .ticks(5)
+        }
+
+        var data =
+          [
+            {
+              "date": "1-May-12",
+              "close": 58.13
+            },
+            {
+              "date": "30-Apr-12",
+              "close": 53.98
+            },
+            {
+              "date": "27-Apr-12",
+              "close": 67
+            },
+            {
+              "date": "26-Apr-12",
+              "close": 89.7
+            },
+            {
+              "date": "25-Apr-12",
+              "close": 99
+            },
+            {
+              "date": "24-Apr-12",
+              "close": 130.28
+            },
+            {
+              "date": "23-Apr-12",
+              "close": 166.7
+            },
+            {
+              "date": "20-Apr-12",
+              "close": 234.98
+            },
+            {
+              "date": "19-Apr-12",
+              "close": 345.44
+            },
+            {
+              "date": "18-Apr-12",
+              "close": 443.34
+            },
+            {
+              "date": "17-Apr-12",
+              "close": 543.7
+            },
+            {
+              "date": "16-Apr-12",
+              "close": 580.13
+            },
+            {
+              "date": "13-Apr-12",
+              "close": 605.23
+            },
+            {
+              "date": "12-Apr-12",
+              "close": 622.77
+            },
+            {
+              "date": "11-Apr-12",
+              "close": 626.2
+            },
+            {
+              "date": "10-Apr-12",
+              "close": 628.44
+            },
+            {
+              "date": "9-Apr-12",
+              "close": 636.23
+            },
+            {
+              "date": "5-Apr-12",
+              "close": 633.68
+            },
+            {
+              "date": "4-Apr-12",
+              "close": 624.31
+            },
+            {
+              "date": "3-Apr-12",
+              "close": 629.32
+            },
+            {
+              "date": "2-Apr-12",
+              "close": 618.63
+            },
+            {
+              "date": "30-Mar-12",
+              "close": 599.55
+            },
+            {
+              "date": "29-Mar-12",
+              "close": 609.86
+            },
+            {
+              "date": "28-Mar-12",
+              "close": 617.62
+            },
+            {
+              "date": "27-Mar-12",
+              "close": 614.48
+            },
+            {
+              "date": "26-Mar-12",
+              "close": 606.98
+            }
+          ];
+
+        data.forEach(function(d) {
+          d.date = parseTime(d.date);
+          d.close = +d.close;
+          console.log("dd" + d.date + ',' + d.close)
+        });
+        x.domain(d3.extent(data, function(d) { return d.date; }));
+
+        y.domain(d3.extent(data, function(d) { return d.close; }));
+
+        // add the X gridlines
+        g.append("g")
+          .attr("class", "gridX")
+          .attr("transform", "translate(0," + height + ")")
+          .call(make_x_gridlines()
+            .tickSize(-height)
+            .tickFormat("")
+          )
+
+        // add the Y gridlines
+        g.append("g")
+          .attr("class", "grid")
+          .call(make_y_gridlines()
+            .tickSize(-width)
+            .tickFormat("")
+          )
+
+        // add the area
+        g.append("path")
+          .data([data])
+          .attr("class", "area")
+          .attr("d", area);
+
+        g.append("path")
+          .data([data])
+          .attr("class", "line")
+          .attr("fill", "none")
+          .attr("stroke", "steelblue")
+          .attr("stroke-linejoin", "round")
+          .attr("stroke-linecap", "round")
+          .attr("stroke-width", 1.5)
+          .attr("d", valueline);
+
+        g.append("g")
+          .attr("transform", "translate(0," + height + ")")
+          .call(d3.axisBottom(x));
+
+        g.append("g")
+          .call(d3.axisLeft(y));
+
+    }
+    if (window.addEventListener) window.addEventListener("load", autorun, false);
+    else if (window.attachEvent) window.attachEvent("onload", autorun);
+    else window.onload = autorun;
+  </script>
+  </body>
+</html>
