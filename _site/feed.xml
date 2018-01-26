@@ -1,4 +1,209 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-25T15:46:31+08:00</updated><id>http://localhost:4000/</id><title type="html">ThreeD</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">d3 Selections</title><link href="http://localhost:4000/d3/2018/01/24/d3-Selections.html" rel="alternate" type="text/html" title="d3 Selections" /><published>2018-01-24T12:03:06+08:00</published><updated>2018-01-24T12:03:06+08:00</updated><id>http://localhost:4000/d3/2018/01/24/d3-Selections</id><content type="html" xml:base="http://localhost:4000/d3/2018/01/24/d3-Selections.html">&lt;p&gt;Demo:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-26T14:39:36+08:00</updated><id>http://localhost:4000/</id><title type="html">ThreeD</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">d3 LineChart for Network</title><link href="http://localhost:4000/d3/2018/01/25/d3-LineChartNetwork.html" rel="alternate" type="text/html" title="d3 LineChart for Network" /><published>2018-01-25T12:03:06+08:00</published><updated>2018-01-25T12:03:06+08:00</updated><id>http://localhost:4000/d3/2018/01/25/d3-LineChartNetwork</id><content type="html" xml:base="http://localhost:4000/d3/2018/01/25/d3-LineChartNetwork.html">&lt;p&gt;Demo:&lt;/p&gt;
+
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;style&gt;
+      .gridX {
+        fill: black;
+      }
+      .gridX line {
+        stroke: #555555;
+        stroke-opacity: 0.7;
+        shape-rendering: crispEdges;
+      }
+      .grid line {
+        stroke: #555555;
+        stroke-opacity: 0.7;
+        shape-rendering: crispEdges;
+      }
+      .grid path {
+        stroke-width: 0;
+      }
+      .areaRx {
+        fill: #8b0e0e;
+      }
+      .areaTx {
+        fill: #0e6289;
+      }
+    &lt;/style&gt;
+    &lt;script src=&quot;https://d3js.org/d3.v4.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+      function autorun() {
+        var dataRx =
+          [
+            {
+              &quot;time&quot;: 0,
+              &quot;close&quot;: 158.13
+            },
+            {
+              &quot;time&quot;: 1,
+              &quot;close&quot;: 2053.98
+            },
+            {
+              &quot;time&quot;: 2,
+              &quot;close&quot;: 1167
+            },
+            {
+              &quot;time&quot;: 3,
+              &quot;close&quot;: 1189.7
+            },
+            {
+              &quot;time&quot;: 4,
+              &quot;close&quot;: 199
+            }
+          ];
+        var dataTx =
+          [
+            {
+              &quot;time&quot;: 0,
+              &quot;close&quot;: 1158.13
+            },
+            {
+              &quot;time&quot;: 1,
+              &quot;close&quot;: 153.98
+            },
+            {
+              &quot;time&quot;: 2,
+              &quot;close&quot;: 1067
+            },
+            {
+              &quot;time&quot;: 3,
+              &quot;close&quot;: 2289.7
+            },
+            {
+              &quot;time&quot;: 4,
+              &quot;close&quot;: 99
+            }
+          ];
+
+        var svg = d3.select(&quot;.post-content&quot;).append(&quot;svg&quot;),
+          margin = {top: 20, right: 40, bottom: 30, left: 50},
+          width = 290 - margin.left - margin.right,
+          height = 210 - margin.top - margin.bottom,
+          g = svg.attr(&quot;width&quot;, width + margin.left + margin.right)
+            .attr(&quot;height&quot;, height + margin.top + margin.bottom)
+            .append(&quot;g&quot;)
+            .attr(&quot;transform&quot;, &quot;translate(&quot; + margin.left + &quot;,&quot; + margin.top + &quot;)&quot;);
+
+        var x = d3.scaleLinear()
+          .range([width, 0]);
+
+        var y = d3.scaleLinear()
+          .range([height, 0]);
+
+        var area = d3.area()
+          .curve(d3.curveCatmullRom.alpha(0.5))
+          .x(function(d) { return x(d.time); })
+          .y0(height)
+          .y1(function(d) { return y(d.close); });
+
+        var valueline = d3.line()
+          .curve(d3.curveCatmullRom.alpha(0.5))
+          .x(function(d) { return x(d.time); })
+          .y(function(d) { return y(d.close); });
+
+        // gridlines in x axis function
+        function make_x_gridlines() {
+          return d3.axisBottom(x)
+        }
+
+        // gridlines in y axis function
+        function make_y_gridlines() {
+          return d3.axisLeft(y)
+        }
+
+        dataRx.forEach(function(d) {
+          d.time = +d.time;
+          d.close = +d.close;
+        });
+
+        x.domain([0, 5]);
+        y.domain([0, 4000]);
+
+        // add the X gridlines
+        g.append(&quot;g&quot;)
+          .attr(&quot;class&quot;, &quot;gridX&quot;)
+          .attr(&quot;transform&quot;, &quot;translate(0,&quot; + height + &quot;)&quot;)
+          .call(make_x_gridlines()
+            .tickValues([0,1,2,3,4,5])
+            .tickSize(-height)
+            .tickFormat(&quot;&quot;)
+          )
+
+        // add the Y gridlines
+        g.append(&quot;g&quot;)
+          .attr(&quot;class&quot;, &quot;grid&quot;)
+          .call(make_y_gridlines()
+            .tickValues([0,1000,2000,3000,4000])
+            .tickSize(-width)
+            .tickFormat(&quot;&quot;)
+          )
+
+        // add the area rx
+        g.append(&quot;path&quot;)
+          .data([dataRx])
+          .attr(&quot;class&quot;, &quot;areaRx&quot;)
+          .attr(&quot;d&quot;, area);
+
+        g.append(&quot;path&quot;)
+          .data([dataRx])
+          .attr(&quot;class&quot;, &quot;lineRx&quot;)
+          .attr(&quot;fill&quot;, &quot;none&quot;)
+          .attr(&quot;stroke&quot;, &quot;#ff2a2a&quot;)
+          .attr(&quot;stroke-linejoin&quot;, &quot;round&quot;)
+          .attr(&quot;stroke-linecap&quot;, &quot;round&quot;)
+          .attr(&quot;stroke-width&quot;, 1.5)
+          .attr(&quot;d&quot;, valueline);
+
+        // add the area tx
+        g.append(&quot;path&quot;)
+          .data([dataTx])
+          .attr(&quot;class&quot;, &quot;areaTx&quot;)
+          .attr(&quot;d&quot;, area);
+
+        g.append(&quot;path&quot;)
+          .data([dataTx])
+          .attr(&quot;class&quot;, &quot;lineTx&quot;)
+          .attr(&quot;fill&quot;, &quot;none&quot;)
+          .attr(&quot;stroke&quot;, &quot;#2bbafb&quot;)
+          .attr(&quot;stroke-linejoin&quot;, &quot;round&quot;)
+          .attr(&quot;stroke-linecap&quot;, &quot;round&quot;)
+          .attr(&quot;stroke-width&quot;, 1.5)
+          .attr(&quot;d&quot;, valueline);
+
+        g.append(&quot;g&quot;)
+          .attr(&quot;transform&quot;, &quot;translate(0,&quot; + height + &quot;)&quot;)
+          .call(d3.axisBottom(x)
+            .ticks(5)
+            .tickFormat(function(d){
+              if (d == 0) {
+                return d+' Mins';
+              } else {
+                return d;
+              }
+            })
+          );
+
+        g.append(&quot;g&quot;)
+          .call(d3.axisLeft(y)
+            .tickValues([0,1000,2000,3000,4000])
+            .tickFormat(function(d){
+              if (d == 0) {
+                return d+'KB/s';
+              } else {
+                return d/1000+'KB';
+              }
+            })
+            //.ticks(4)
+          );
+
+    }
+    if (window.addEventListener) window.addEventListener(&quot;load&quot;, autorun, false);
+    else if (window.attachEvent) window.attachEvent(&quot;onload&quot;, autorun);
+    else window.onload = autorun;
+  &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Demo:</summary></entry><entry><title type="html">d3 Selections</title><link href="http://localhost:4000/d3/2018/01/24/d3-Selections.html" rel="alternate" type="text/html" title="d3 Selections" /><published>2018-01-24T12:03:06+08:00</published><updated>2018-01-24T12:03:06+08:00</updated><id>http://localhost:4000/d3/2018/01/24/d3-Selections</id><content type="html" xml:base="http://localhost:4000/d3/2018/01/24/d3-Selections.html">&lt;p&gt;Demo:&lt;/p&gt;
 
 &lt;html&gt;
   &lt;body&gt;
@@ -246,103 +451,4 @@ packer build &lt;span class=&quot;nt&quot;&gt;--only&lt;/span&gt;&lt;span class=
 &lt;h1 id=&quot;參考&quot;&gt;參考&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/seterrychen/packer-vagrant-vbox&quot;&gt;Using Packer to package Vagrant box(driver: Virtualbox) by Docker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">學習 Packer 筆記．(不完整版)</summary></entry><entry><title type="html">從 javascript 看 python</title><link href="http://localhost:4000/python/2016/05/04/learn-python-from-javascript.html" rel="alternate" type="text/html" title="從 javascript 看 python" /><published>2016-05-04T14:30:00+08:00</published><updated>2016-05-04T14:30:00+08:00</updated><id>http://localhost:4000/python/2016/05/04/learn-python-from-javascript</id><content type="html" xml:base="http://localhost:4000/python/2016/05/04/learn-python-from-javascript.html">&lt;p&gt;學習 &lt;a href=&quot;https://www.python.org/&quot;&gt;Python&lt;/a&gt; 筆記，紀錄與 javascript 語法特別的地方．(不完整版)&lt;/p&gt;
-
-&lt;h2 id=&quot;the-range-function&quot;&gt;The range() Function&lt;/h2&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Mary'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'had'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'a'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'little'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'lamb'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;i &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;range&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;len&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;:
-...     print i, a[i]
-...
-0 Mary
-1 had
-2 a
-3 little
-4 lamb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;break-and-continue-statements-and-else-clauses-on-loops&quot;&gt;break and continue Statements, and else Clauses on Loops&lt;/h2&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;n &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;range&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2, 10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
-...     &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;x &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;range&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2, n&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
-...         &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;n % x &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; 0:
-...             print n, &lt;span class=&quot;s1&quot;&gt;'equals'&lt;/span&gt;, x, &lt;span class=&quot;s1&quot;&gt;'*'&lt;/span&gt;, n/x
-...             &lt;span class=&quot;nb&quot;&gt;break&lt;/span&gt;
-...     &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;:
-...         &lt;span class=&quot;c&quot;&gt;# loop fell through without finding a factor&lt;/span&gt;
-...         print n, &lt;span class=&quot;s1&quot;&gt;'is a prime number'&lt;/span&gt;
-...
-2 is a prime number
-3 is a prime number
-4 equals 2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 2
-5 is a prime number
-6 equals 2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 3
-7 is a prime number
-8 equals 2 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 4
-9 equals 3 &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;num &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;range&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2, 10&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
-...     &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;num % 2 &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; 0:
-...         print &lt;span class=&quot;s2&quot;&gt;&quot;Found an even number&quot;&lt;/span&gt;, num
-...         &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;
-...     print &lt;span class=&quot;s2&quot;&gt;&quot;Found a number&quot;&lt;/span&gt;, num
-Found an even number 2
-Found a number 3
-Found an even number 4
-Found a number 5
-Found an even number 6
-Found a number 7
-Found an even number 8
-Found a number 9
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;pass-statements&quot;&gt;pass Statements&lt;/h2&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;while &lt;/span&gt;True:
-...     pass  &lt;span class=&quot;c&quot;&gt;# Busy-wait for keyboard interrupt (Ctrl+C)&lt;/span&gt;
-...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; class MyEmptyClass:
-...     pass
-...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; def initlog&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;args&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
-...     pass   &lt;span class=&quot;c&quot;&gt;# Remember to implement this!&lt;/span&gt;
-...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;the-default-value-is-evaluated-only-once&quot;&gt;The default value is evaluated only once.&lt;/h2&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def f&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;a, &lt;span class=&quot;nv&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=[])&lt;/span&gt;:
-    L.append&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;L
-
-print f&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-print f&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-print f&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def f&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;a, &lt;span class=&quot;nv&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;None&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
-    &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;L is None:
-        L &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt;
-    L.append&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;L
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;keyword-arguments&quot;&gt;Keyword Arguments&lt;/h2&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def cheeseshop&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;kind, &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;arguments, &lt;span class=&quot;k&quot;&gt;**&lt;/span&gt;keywords&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
-    print &lt;span class=&quot;s2&quot;&gt;&quot;-- Do you have any&quot;&lt;/span&gt;, kind, &lt;span class=&quot;s2&quot;&gt;&quot;?&quot;&lt;/span&gt;
-    print &lt;span class=&quot;s2&quot;&gt;&quot;-- I'm sorry, we're all out of&quot;&lt;/span&gt;, kind
-    &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;arg &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;arguments:
-        print arg
-    print &lt;span class=&quot;s2&quot;&gt;&quot;-&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; 40
-    keys &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; sorted&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;keywords.keys&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;kw &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;keys:
-        print kw, &lt;span class=&quot;s2&quot;&gt;&quot;:&quot;&lt;/span&gt;, keywords[kw]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;lambda-expressions&quot;&gt;Lambda Expressions&lt;/h2&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; def make_incrementor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;n&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;:
-...     &lt;span class=&quot;k&quot;&gt;return &lt;/span&gt;lambda x: x + n
-...
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; f &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; make_incrementor&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;42&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; f&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-42
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; f&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-43
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">學習 Python 筆記，紀錄與 javascript 語法特別的地方．(不完整版)</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">學習 Packer 筆記．(不完整版)</summary></entry></feed>

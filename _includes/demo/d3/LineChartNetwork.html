@@ -1,0 +1,204 @@
+<html>
+  <body>
+    <style>
+      .gridX {
+        fill: black;
+      }
+      .gridX line {
+        stroke: #555555;
+        stroke-opacity: 0.7;
+        shape-rendering: crispEdges;
+      }
+      .grid line {
+        stroke: #555555;
+        stroke-opacity: 0.7;
+        shape-rendering: crispEdges;
+      }
+      .grid path {
+        stroke-width: 0;
+      }
+      .areaRx {
+        fill: #8b0e0e;
+      }
+      .areaTx {
+        fill: #0e6289;
+      }
+    </style>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script type="text/javascript">
+      function autorun() {
+        var dataRx =
+          [
+            {
+              "time": 0,
+              "close": 158.13
+            },
+            {
+              "time": 1,
+              "close": 2053.98
+            },
+            {
+              "time": 2,
+              "close": 1167
+            },
+            {
+              "time": 3,
+              "close": 1189.7
+            },
+            {
+              "time": 4,
+              "close": 199
+            }
+          ];
+        var dataTx =
+          [
+            {
+              "time": 0,
+              "close": 1158.13
+            },
+            {
+              "time": 1,
+              "close": 153.98
+            },
+            {
+              "time": 2,
+              "close": 1067
+            },
+            {
+              "time": 3,
+              "close": 2289.7
+            },
+            {
+              "time": 4,
+              "close": 99
+            }
+          ];
+
+        var svg = d3.select(".post-content").append("svg"),
+          margin = {top: 20, right: 40, bottom: 30, left: 50},
+          width = 290 - margin.left - margin.right,
+          height = 210 - margin.top - margin.bottom,
+          g = svg.attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var x = d3.scaleLinear()
+          .range([width, 0]);
+
+        var y = d3.scaleLinear()
+          .range([height, 0]);
+
+        var area = d3.area()
+          .curve(d3.curveCatmullRom.alpha(0.5))
+          .x(function(d) { return x(d.time); })
+          .y0(height)
+          .y1(function(d) { return y(d.close); });
+
+        var valueline = d3.line()
+          .curve(d3.curveCatmullRom.alpha(0.5))
+          .x(function(d) { return x(d.time); })
+          .y(function(d) { return y(d.close); });
+
+        // gridlines in x axis function
+        function make_x_gridlines() {
+          return d3.axisBottom(x)
+        }
+
+        // gridlines in y axis function
+        function make_y_gridlines() {
+          return d3.axisLeft(y)
+        }
+
+        dataRx.forEach(function(d) {
+          d.time = +d.time;
+          d.close = +d.close;
+        });
+
+        x.domain([0, 5]);
+        y.domain([0, 4000]);
+
+        // add the X gridlines
+        g.append("g")
+          .attr("class", "gridX")
+          .attr("transform", "translate(0," + height + ")")
+          .call(make_x_gridlines()
+            .tickValues([0,1,2,3,4,5])
+            .tickSize(-height)
+            .tickFormat("")
+          )
+
+        // add the Y gridlines
+        g.append("g")
+          .attr("class", "grid")
+          .call(make_y_gridlines()
+            .tickValues([0,1000,2000,3000,4000])
+            .tickSize(-width)
+            .tickFormat("")
+          )
+
+        // add the area rx
+        g.append("path")
+          .data([dataRx])
+          .attr("class", "areaRx")
+          .attr("d", area);
+
+        g.append("path")
+          .data([dataRx])
+          .attr("class", "lineRx")
+          .attr("fill", "none")
+          .attr("stroke", "#ff2a2a")
+          .attr("stroke-linejoin", "round")
+          .attr("stroke-linecap", "round")
+          .attr("stroke-width", 1.5)
+          .attr("d", valueline);
+
+        // add the area tx
+        g.append("path")
+          .data([dataTx])
+          .attr("class", "areaTx")
+          .attr("d", area);
+
+        g.append("path")
+          .data([dataTx])
+          .attr("class", "lineTx")
+          .attr("fill", "none")
+          .attr("stroke", "#2bbafb")
+          .attr("stroke-linejoin", "round")
+          .attr("stroke-linecap", "round")
+          .attr("stroke-width", 1.5)
+          .attr("d", valueline);
+
+        g.append("g")
+          .attr("transform", "translate(0," + height + ")")
+          .call(d3.axisBottom(x)
+            .ticks(5)
+            .tickFormat(function(d){
+              if (d == 0) {
+                return d+' Mins';
+              } else {
+                return d;
+              }
+            })
+          );
+
+        g.append("g")
+          .call(d3.axisLeft(y)
+            .tickValues([0,1000,2000,3000,4000])
+            .tickFormat(function(d){
+              if (d == 0) {
+                return d+'KB/s';
+              } else {
+                return d/1000+'KB';
+              }
+            })
+            //.ticks(4)
+          );
+
+    }
+    if (window.addEventListener) window.addEventListener("load", autorun, false);
+    else if (window.attachEvent) window.attachEvent("onload", autorun);
+    else window.onload = autorun;
+  </script>
+  </body>
+</html>
