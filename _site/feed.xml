@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-26T14:39:36+08:00</updated><id>http://localhost:4000/</id><title type="html">ThreeD</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">d3 LineChart for Network</title><link href="http://localhost:4000/d3/2018/01/25/d3-LineChartNetwork.html" rel="alternate" type="text/html" title="d3 LineChart for Network" /><published>2018-01-25T12:03:06+08:00</published><updated>2018-01-25T12:03:06+08:00</updated><id>http://localhost:4000/d3/2018/01/25/d3-LineChartNetwork</id><content type="html" xml:base="http://localhost:4000/d3/2018/01/25/d3-LineChartNetwork.html">&lt;p&gt;Demo:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-05T16:27:14+08:00</updated><id>http://localhost:4000/</id><title type="html">ThreeD</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">initial css</title><link href="http://localhost:4000/css/html/2018/02/12/initial-css.html" rel="alternate" type="text/html" title="initial css" /><published>2018-02-12T12:03:06+08:00</published><updated>2018-02-12T12:03:06+08:00</updated><id>http://localhost:4000/css/html/2018/02/12/initial-css</id><content type="html" xml:base="http://localhost:4000/css/html/2018/02/12/initial-css.html">&lt;p&gt;&lt;a href=&quot;http://necolas.github.io/normalize.css/&quot;&gt;Normalize.css&lt;/a&gt; 大部分css框架，包含bootstrap都會拿來重設元件．&lt;/p&gt;
+
+&lt;p&gt;除此之外還會有一些初始化html會遇到的問題，紀錄一下&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/6654958/make-body-have-100-of-the-browser-height&quot;&gt;Make body have 100% of the browser height&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Normalize.css 大部分css框架，包含bootstrap都會拿來重設元件．</summary></entry><entry><title type="html">d3 LineChart for Network</title><link href="http://localhost:4000/d3/2018/01/25/d3-LineChartNetwork.html" rel="alternate" type="text/html" title="d3 LineChart for Network" /><published>2018-01-25T12:03:06+08:00</published><updated>2018-01-25T12:03:06+08:00</updated><id>http://localhost:4000/d3/2018/01/25/d3-LineChartNetwork</id><content type="html" xml:base="http://localhost:4000/d3/2018/01/25/d3-LineChartNetwork.html">&lt;p&gt;Demo:&lt;/p&gt;
 
 &lt;html&gt;
   &lt;body&gt;
@@ -422,33 +428,4 @@ sencha app watch
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/BcVGxk8.png?1&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/8Crue8E.png?1&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">學習 Ext JS 筆記．</summary></entry><entry><title type="html">使用 Packer 建立 Windows VM box</title><link href="http://localhost:4000/devops/2016/05/06/learn-packer-to-build-windows-vm.html" rel="alternate" type="text/html" title="使用 Packer 建立 Windows VM box" /><published>2016-05-06T17:30:00+08:00</published><updated>2016-05-06T17:30:00+08:00</updated><id>http://localhost:4000/devops/2016/05/06/learn-packer-to-build-windows-vm</id><content type="html" xml:base="http://localhost:4000/devops/2016/05/06/learn-packer-to-build-windows-vm.html">&lt;p&gt;學習 &lt;a href=&quot;https://www.packer.io/&quot;&gt;Packer&lt;/a&gt; 筆記．(不完整版)&lt;/p&gt;
-
-&lt;h2 id=&quot;安裝&quot;&gt;安裝&lt;/h2&gt;
-&lt;p&gt;參閱官方&lt;a href=&quot;https://www.packer.io/docs/installation.html&quot;&gt;文件&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;實作-windows&quot;&gt;實作 Windows&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://stefanscherer.github.io/setup-local-windows-2016-tp5-docker-vm/&quot;&gt;Setup a local Windows 2016 TP5 Docker VM&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;run-packer&quot;&gt;Run Packer&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Packer version : 0.10.0&lt;/li&gt;
-  &lt;li&gt;Virtualbox version : 5.0.20&lt;/li&gt;
-  &lt;li&gt;Vagrant : 1.8.1&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/StefanScherer/packer-windows
-&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;packer-windows
-
-packer build &lt;span class=&quot;nt&quot;&gt;--only&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;virtualbox-iso windows_2016_docker.json
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blogs.technet.microsoft.com/ausoemteam/2016/04/28/windows-server-2016-technical-preview-5-available-for-download/&quot;&gt;key&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;參考&quot;&gt;參考&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/seterrychen/packer-vagrant-vbox&quot;&gt;Using Packer to package Vagrant box(driver: Virtualbox) by Docker&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html">學習 Packer 筆記．(不完整版)</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/8Crue8E.png?1&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">學習 Ext JS 筆記．</summary></entry></feed>
