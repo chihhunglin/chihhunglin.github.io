@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-05T17:42:16+08:00</updated><id>http://localhost:4000/</id><title type="html">ThreeD</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">initial css</title><link href="http://localhost:4000/css/html/2018/02/12/initial-css.html" rel="alternate" type="text/html" title="initial css" /><published>2018-02-12T12:03:06+08:00</published><updated>2018-02-12T12:03:06+08:00</updated><id>http://localhost:4000/css/html/2018/02/12/initial-css</id><content type="html" xml:base="http://localhost:4000/css/html/2018/02/12/initial-css.html">&lt;p&gt;&lt;a href=&quot;http://necolas.github.io/normalize.css/&quot;&gt;Normalize.css&lt;/a&gt; 大部分css框架，包含bootstrap都會拿來重設元件．&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-05T18:17:13+08:00</updated><id>http://localhost:4000/</id><title type="html">ThreeD</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">How to hook ReactJs to your existing AngularJS 1.X app [筆記]</title><link href="http://localhost:4000/angularjs/reactjs/2018/03/05/hook-reactjs-to-angularjs1.html" rel="alternate" type="text/html" title="How to hook ReactJs to your existing AngularJS 1.X app [筆記]" /><published>2018-03-05T12:03:06+08:00</published><updated>2018-03-05T12:03:06+08:00</updated><id>http://localhost:4000/angularjs/reactjs/2018/03/05/hook-reactjs-to-angularjs1</id><content type="html" xml:base="http://localhost:4000/angularjs/reactjs/2018/03/05/hook-reactjs-to-angularjs1.html">&lt;p&gt;&lt;a href=&quot;https://codeburst.io/how-to-hook-reactjs-to-your-existing-angularjs-1-x-app-5ab1ac59c0c1&quot;&gt;原文出處&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;此篇文章有很好的範例，並且解釋了AngularJS 跟 React 的不同：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Angular puts JS into HTML while React puts HTML into JS.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;總結:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;創建一個 directive 包裹 React app&lt;/li&gt;
+  &lt;li&gt;通過隔離的 scope 從 parent 輸入 data 到 directive&lt;/li&gt;
+  &lt;li&gt;利用 &lt;code class=&quot;highlighter-rouge&quot;&gt;scope.$watch()&lt;/code&gt; 擷取更新的值，並且實作在 &lt;code class=&quot;highlighter-rouge&quot;&gt;link()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;數入值給 react app 的 &lt;code class=&quot;highlighter-rouge&quot;&gt;props&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">原文出處</summary></entry><entry><title type="html">initial css</title><link href="http://localhost:4000/css/html/2018/02/12/initial-css.html" rel="alternate" type="text/html" title="initial css" /><published>2018-02-12T12:03:06+08:00</published><updated>2018-02-12T12:03:06+08:00</updated><id>http://localhost:4000/css/html/2018/02/12/initial-css</id><content type="html" xml:base="http://localhost:4000/css/html/2018/02/12/initial-css.html">&lt;p&gt;&lt;a href=&quot;http://necolas.github.io/normalize.css/&quot;&gt;Normalize.css&lt;/a&gt; 大部分css框架，包含bootstrap都會拿來重設元件．&lt;/p&gt;
 
 &lt;p&gt;除此之外還會有一些初始化html會遇到的問題，紀錄一下&lt;/p&gt;
 
@@ -390,42 +405,4 @@ mv yolo.weights bin/.&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/Q7CdLSe.png?1&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/iKl047R.png?1&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">使用 Docker 開發 ASP.NET，參閱 Quickstart .NET Core</summary></entry><entry><title type="html">測試 Extjs</title><link href="http://localhost:4000/frontend/2016/05/12/learn-extjs.html" rel="alternate" type="text/html" title="測試 Extjs" /><published>2016-05-12T14:30:00+08:00</published><updated>2016-05-12T14:30:00+08:00</updated><id>http://localhost:4000/frontend/2016/05/12/learn-extjs</id><content type="html" xml:base="http://localhost:4000/frontend/2016/05/12/learn-extjs.html">&lt;p&gt;學習 &lt;a href=&quot;https://www.sencha.com/&quot;&gt;Ext JS&lt;/a&gt; 筆記．&lt;/p&gt;
-
-&lt;h2 id=&quot;安裝&quot;&gt;安裝&lt;/h2&gt;
-&lt;p&gt;參閱官方&lt;a href=&quot;http://docs.sencha.com/extjs/6.0/getting_started/welcome_to_extjs.html&quot;&gt;文件&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;下載試用版 : Download and Install Sencha Cmd 6&lt;/li&gt;
-  &lt;li&gt;下載SDK : Download and unzip the Ext JS SDK&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;使用-sencha-cmd-建立-ext-js-6-應用程式&quot;&gt;使用 Sencha Cmd 建立 Ext JS 6 應用程式&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;打開console window (小魯的是 Win10)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.sencha.com/cmd/6.x/extjs/cmd_app.html&quot;&gt;操作手冊&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sencha &lt;span class=&quot;nt&quot;&gt;-sdk&lt;/span&gt; /path/to/ext6 generate app MyApp /path/to/my-app
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;進行開發&quot;&gt;進行開發&lt;/h3&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /path/to/my-app
-sencha app watch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;瀏覽&quot;&gt;瀏覽&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;http://localhost:1841/&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/VEUK0K7.png?1&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;建構一個登入系統&quot;&gt;建構一個登入系統&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://docs.sencha.com/extjs/6.0/getting_started/login_app.html#Step_1___Generate_your_Application&quot;&gt;範例&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/BcVGxk8.png?1&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/8Crue8E.png?1&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">學習 Ext JS 筆記．</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/iKl047R.png?1&quot; alt=&quot;Imgur&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">使用 Docker 開發 ASP.NET，參閱 Quickstart .NET Core</summary></entry></feed>
