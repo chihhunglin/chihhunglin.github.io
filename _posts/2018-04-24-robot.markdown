@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Learning Robot Framework"
+date:   2018-04-24 12:03:06 +0800
+categories: Python Selenium Robot
+---
+學習 [Robot Framework][robot]
+
+[robot]: http://blog.castman.net/programming/2016/07/28/robotframework.html
